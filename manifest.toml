@@ -7,11 +7,11 @@ minGameVersion = 1
 
 [name]
 packId = "glimmerworks"
-resourceType = 1
+resourceType = "string"
 resourceKey = "resPacksName"
 
 [description]
 packId = "glimmerworks"
-resourceType = 1
+resourceType = "string"
 resourceKey = "resPacksDescription"
 
