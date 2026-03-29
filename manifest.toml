@@ -1,16 +1,16 @@
-author = 'Cold-Mint'
-id = 'glimmerworks_res'
+author = "Cold-Mint"
+id = "glimmerworks_res"
 min_game_version = 1
 res_pack = true
-version_name = '1.0'
+version_name = "1.0"
 version_number = 1
 
 [description]
-pack_id = 'glimmerworks'
-resource_key = 'resPacksDescription'
-resource_type = 'string'
+pack_id = "glimmerworks"
+resource_key = "resPacksDescription"
+resource_type = "string"
 
 [name]
-pack_id = 'glimmerworks'
-resource_key = 'resPacksName'
-resource_type = 'string'
+pack_id = "glimmerworks"
+resource_key = "resPacksName"
+resource_type = "string"
