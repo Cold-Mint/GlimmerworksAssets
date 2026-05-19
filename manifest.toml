@@ -8,9 +8,9 @@ version_number = 1
 [description]
 pack_id = "glimmerworks"
 resource_key = "resPacksDescription"
-resource_type = "string"
+resource_type = 1
 
 [name]
 pack_id = "glimmerworks"
 resource_key = "resPacksName"
-resource_type = "string"
+resource_type = 1
