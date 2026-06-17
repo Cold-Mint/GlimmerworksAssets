@@ -1,0 +1,272 @@
+# 金镐
+[[texture_variation]]
+template_path = ".templates/textures/pickaxe.png"
+output_path = "textures/glimmerworks/items/pickaxe_golden.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/gold_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/gold_light.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/ore.png"
+output_path = "textures/glimmerworks/tiles/ore_gold.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/gold_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/gold_shadow.color.toml"
+
+# 铁镐
+[[texture_variation]]
+template_path = ".templates/textures/pickaxe.png"
+output_path = "textures/glimmerworks/items/pickaxe_iron.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/iron_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/iron_light.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/ore.png"
+output_path = "textures/glimmerworks/tiles/ore_iron.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/iron_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/iron_shadow.color.toml"
+
+# 铜镐
+[[texture_variation]]
+template_path = ".templates/textures/pickaxe.png"
+output_path = "textures/glimmerworks/items/pickaxe_copper.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/copper_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/copper_light.color.toml"
+
+
+[[texture_variation]]
+template_path = ".templates/textures/ore.png"
+output_path = "textures/glimmerworks/tiles/ore_copper.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/copper_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/copper_shadow.color.toml"
+
+# 石镐
+[[texture_variation]]
+template_path = ".templates/textures/pickaxe.png"
+output_path = "textures/glimmerworks/items/pickaxe_stone.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/stone_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/stone_light.color.toml"
+
+# 木镐
+[[texture_variation]]
+template_path = ".templates/textures/pickaxe.png"
+output_path = "textures/glimmerworks/items/pickaxe_wooden.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/wood_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/wood_light.color.toml"
+
+# 糖果镐
+[[texture_variation]]
+template_path = ".templates/textures/pickaxe.png"
+output_path = "textures/glimmerworks/items/pickaxe_candy.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/candy_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/candy_light.color.toml"
+
+# 黑色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_black.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_black.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_black.color.toml"
+set_a = 128
+
+# 透明玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_clear.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_clear.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_clear.color.toml"
+set_a = 128
+
+# 绿色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_green.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_green.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_green.color.toml"
+set_a = 128
+
+# 粉色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_pink.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_pink.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_pink.color.toml"
+set_a = 128
+
+# 红色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_red.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_red.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_red.color.toml"
+set_a = 128
+
+# 白色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_white.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_white.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_white.color.toml"
+set_a = 128
+
+# 蓝色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_blue.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_blue.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_blue.color.toml"
+set_a = 128
+
+# 青色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_cyan.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_cyan.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_cyan.color.toml"
+set_a = 128
+
+# 橙色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_orange.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_orange.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_orange.color.toml"
+set_a = 128
+
+# 紫色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_purple.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_purple.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_purple.color.toml"
+set_a = 128
+
+# 蓝绿色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_teal.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_teal.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_teal.color.toml"
+set_a = 128
+
+# 黄色玻璃
+[[texture_variation]]
+template_path = ".templates/textures/glass.png"
+output_path = "textures/glimmerworks/tiles/glass_yellow.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = "colors/glimmerworks/glass/glass_yellow.color.toml"
+set_a = 255
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = "colors/glimmerworks/glass/glass_yellow.color.toml"
+set_a = 128
+
+[[texture_variation]]
+template_path = ".templates/textures/raw.png"
+output_path = "textures/glimmerworks/tiles/raw_gold.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/gold_light.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/raw.png"
+output_path = "textures/glimmerworks/tiles/raw_iron.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/iron_light.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/raw.png"
+output_path = "textures/glimmerworks/tiles/raw_copper.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/copper_light.color.toml"
