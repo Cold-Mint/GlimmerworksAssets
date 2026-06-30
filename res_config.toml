@@ -1,0 +1,23 @@
+[button_nine_slice]
+left_border_px = 3.0
+bottom_border_px = 5.0
+right_border_px = 3.0
+top_border_px = 3.0
+
+[item_slot_nine_slice]
+left_border_px = 2.0
+bottom_border_px = 2.0
+right_border_px = 2.0
+top_border_px = 2.0
+
+[craft_preview_slot_nine_slice]
+left_border_px = 2.0
+bottom_border_px = 2.0
+right_border_px = 2.0
+top_border_px = 2.0
+
+[item_tool_tip_nine_slice]
+left_border_px = 2.0
+bottom_border_px = 2.0
+right_border_px = 2.0
+top_border_px = 2.0

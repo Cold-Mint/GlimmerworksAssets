@@ -84,17 +84,6 @@ to_path = ".templates/colors/ore/wood_shadow.color.toml"
 from_path = ".templates/colors/placeholder_green.color.toml"
 to_path = ".templates/colors/ore/wood_light.color.toml"
 
-# 糖果镐
-[[texture_variation]]
-template_path = ".templates/textures/pickaxe.png"
-output_path = "textures/glimmerworks/items/pickaxe_candy.png"
-[[texture_variation.color_mapping]]
-from_path = ".templates/colors/placeholder_red.color.toml"
-to_path = ".templates/colors/ore/candy_shadow.color.toml"
-[[texture_variation.color_mapping]]
-from_path = ".templates/colors/placeholder_green.color.toml"
-to_path = ".templates/colors/ore/candy_light.color.toml"
-
 # 黑色玻璃
 [[texture_variation]]
 template_path = ".templates/textures/glass.png"
