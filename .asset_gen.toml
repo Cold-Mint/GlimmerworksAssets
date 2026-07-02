@@ -35,10 +35,10 @@ template_path = ".templates/textures/ore.png"
 output_path = "textures/glimmerworks/tiles/ore_iron.png"
 [[texture_variation.color_mapping]]
 from_path = ".templates/colors/placeholder_green.color.toml"
-to_path = ".templates/colors/ore/iron_light.color.toml"
+to_path = ".templates/colors/ore/ore_iron_light.color.toml"
 [[texture_variation.color_mapping]]
 from_path = ".templates/colors/placeholder_red.color.toml"
-to_path = ".templates/colors/ore/iron_shadow.color.toml"
+to_path = ".templates/colors/ore/ore_iron_shadow.color.toml"
 
 # 铜镐
 [[texture_variation]]
@@ -241,21 +241,82 @@ set_a = 128
 
 [[texture_variation]]
 template_path = ".templates/textures/raw.png"
-output_path = "textures/glimmerworks/tiles/raw_gold.png"
+output_path = "textures/glimmerworks/materials/raw_gold.png"
 [[texture_variation.color_mapping]]
 from_path = ".templates/colors/placeholder_green.color.toml"
 to_path = ".templates/colors/ore/gold_light.color.toml"
 
 [[texture_variation]]
 template_path = ".templates/textures/raw.png"
-output_path = "textures/glimmerworks/tiles/raw_iron.png"
+output_path = "textures/glimmerworks/materials/raw_iron.png"
 [[texture_variation.color_mapping]]
 from_path = ".templates/colors/placeholder_green.color.toml"
-to_path = ".templates/colors/ore/iron_light.color.toml"
+to_path = ".templates/colors/ore/ore_iron_light.color.toml"
 
 [[texture_variation]]
 template_path = ".templates/textures/raw.png"
-output_path = "textures/glimmerworks/tiles/raw_copper.png"
+output_path = "textures/glimmerworks/materials/raw_copper.png"
 [[texture_variation.color_mapping]]
 from_path = ".templates/colors/placeholder_green.color.toml"
 to_path = ".templates/colors/ore/copper_light.color.toml"
+
+
+[[texture_variation]]
+template_path = ".templates/textures/nugget.png"
+output_path = "textures/glimmerworks/materials/nugget_gold.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/gold_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/gold_shadow.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/nugget.png"
+output_path = "textures/glimmerworks/materials/nugget_iron.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/iron_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/iron_shadow.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/nugget.png"
+output_path = "textures/glimmerworks/materials/nugget_copper.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/copper_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/copper_shadow.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/ingot.png"
+output_path = "textures/glimmerworks/materials/ingot_gold.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/gold_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/gold_shadow.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/ingot.png"
+output_path = "textures/glimmerworks/materials/ingot_iron.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/iron_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/iron_shadow.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/ingot.png"
+output_path = "textures/glimmerworks/materials/ingot_copper.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/copper_light.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/copper_shadow.color.toml"
