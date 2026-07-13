@@ -1,0 +1,14 @@
+.console {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+}
+
+.console_input {
+    width: 100%;
+    height: 36px;
+    font-family: core;
+}

@@ -1,0 +1,20 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss" />
+        <link type="text/rcss" href="main.rcss" />
+    </head>
+
+    <body class="main">
+        <p class="title">glimmerWorks</p>
+        <div class="button_container">
+            <button id="start_game">start_game</button>
+            <button id="exit_game">exit_game</button>
+        </div>
+        <div class="copyright" data-model="main_scene">{{copyright}}</div>
+        <div class="links" data-model="main_scene">
+            <a data-for="link : footerLinks" href="{{link.url}}">
+                {{link.text}}
+            </a>
+        </div>
+    </body>
+</rml>

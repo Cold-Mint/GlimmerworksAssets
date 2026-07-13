@@ -1,0 +1,12 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss" />
+        <link type="text/rcss" href="console.rcss" />
+    </head>
+
+    <body class="console">
+    <p>你好</p>
+    <input type="text" class="console_input"></input>
+    <button id="start_game">start_game</button>
+    </body>
+</rml>

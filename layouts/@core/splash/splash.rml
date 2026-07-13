@@ -1,0 +1,10 @@
+<rml>
+
+    <head>
+        <link type="text/rcss" href="../global.rcss" />
+        <link type="text/rcss" href="splash.rcss" />
+    </head>
+
+    <body class="splash">
+    </body>
+</rml>
