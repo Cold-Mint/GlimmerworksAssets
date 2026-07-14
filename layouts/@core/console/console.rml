@@ -5,8 +5,18 @@
     </head>
 
     <body class="console">
-    <p>你好</p>
-    <input type="text" class="console_input"></input>
-    <button id="start_game">start_game</button>
+    <p>console</p>
+    <div class="top_content">
+    
+    </div>
+    <div class="bottom_bar">
+        <p class="command_structure">命令结构</p>
+    <div class="input_wrap">
+       <input id="console_input" type="text" class="console_input"></input>
+        <span id="autocomplete_hint" class="autocomplete_tip">你好111</span>
+ 
+    </div>
+     
+    </div>
     </body>
 </rml>

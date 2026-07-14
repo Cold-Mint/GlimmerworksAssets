@@ -1,10 +1,10 @@
 button {
     font-family: core;
-    padding: 12px 30px;
-    font-size: 18px;
+    padding: 12px 30dp;
+    font-size: 18dp;
     background-color: #4a90d9;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 8dp;
     cursor: pointer;
 }
 
@@ -16,6 +16,10 @@ button:hover {
 button:active {
     background-color: #3a7bc8;
     border-color: #2a6bc7;
+}
+
+input {
+    font-family: core;
 }
 
 p {
@@ -30,4 +34,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+* {
+     box-sizing: border-box;
 }

@@ -1,14 +1,81 @@
 .console {
-    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #333333;
+    padding: 8dp;
+    background-color: #d4ba11;
+    gap: 8dp;
+
+}
+
+.top_content {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #1e1e1e;
+    padding: 6dp;
+    border-radius: 4dp;
+}
+
+.top_content::-scrollbar-vertical {
+    width: 6dp;
+}
+
+.top_content::-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 3dp;
+}
+
+.bottom_bar {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #13d02c;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.input_wrap {
+    background-color: #c11e24;
+    position: relative;
+    width: 100%;
+    height: 32dp;
+    display: flex;
+    align-items: center;
 }
 
 .console_input {
+    height: 100%;
     width: 100%;
-    height: 36px;
+    padding: 8dp;
+    border-radius: 4dp;
+    position: relative;
+    z-index: 2;
+    font-size: 14dp;
     font-family: core;
+    line-height: 100%;
+    margin: 0;
+}
+
+.command_structure {
+    padding: 8dp;
+    font-size: 14dp;
+    font-family: core;
+    background-color: #c45a13;
+}
+
+.autocomplete_tip {
+    position: absolute;
+    top: 0;
+    height: 100%;
+       padding: 8dp;
+    width: 100%;
+    line-height: 100%;
+    color: #555555;
+    font-family: core;
+    font-size: 14dp;
+    background-color: transparent;
+    z-index: 1;
 }
