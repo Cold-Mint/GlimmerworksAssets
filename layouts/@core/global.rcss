@@ -1,5 +1,4 @@
 button {
-    font-family: core;
     padding: 12px 30dp;
     font-size: 18dp;
     background-color: #4a90d9;
@@ -18,16 +17,7 @@ button:active {
     border-color: #2a6bc7;
 }
 
-input {
-    font-family: core;
-}
-
-p {
-    font-family: core;
-}
-
 a {
-    font-family: core;
     color: #4a90d9;
     text-decoration: none;
 }
@@ -37,5 +27,6 @@ a:hover {
 }
 
 * {
+    font-family: core;
      box-sizing: border-box;
 }
