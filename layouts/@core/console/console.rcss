@@ -74,13 +74,33 @@
 }
 
 
-.command_suggestion {
+.suggestion_list {
     display: flex;
     flex-direction: column;
     gap: 4dp;
     padding: 6dp;
     max-height: 25vh;
     overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.suggestion_list scrollbarvertical {
+    width: 12dp;
+}
+
+.suggestion_list scrollbarvertical slidertrack {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.suggestion_list scrollbarvertical sliderbar {
+    width: 12dp;
+    min-height: 20dp;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.suggestion_list scrollbarvertical sliderbar:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -89,8 +109,8 @@
     display: flex;
     flex-direction: row;
     gap: 0dp;
-    padding:4dp;
-        cursor:pointer;
+    padding: 4dp 10dp 4dp 6dp;
+    cursor: pointer;
 }
 
 .suggestion_item:hover{
