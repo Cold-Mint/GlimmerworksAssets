@@ -4,23 +4,24 @@
         <link type="text/rcss" href="../global.rcss" />
         <link type="text/rcss" href="console.rcss" />
     </head>
+
     <body class="console" data-model="console_scene">
         <p>console</p>
-        <div class="top_content" >
+        <div class="top_content">
             <p data-for="messageItem : console_messages">
                 {{messageItem.message}}
             </p>
         </div>
         <div class="bottom_bar">
-          <div class="command_suggestion" data-if="command_suggestions.size > 0">
-                        <span data-for="link : command_suggestions">
-                            {{link.message}}
-                        </span>
-                    </div>
+            <div id="command_suggestion" class="command_suggestion" data-if="command_suggestions.size > 0">
+                <div class="suggestion_item" data-for="suggestion : command_suggestions" data-event-click="on_suggest_click(suggestion.message)">
+                    <span class="suggestion">{{suggestion.prefix}}</span><span class="suggestion_keyword">{{suggestion.keyword}}</span><span class="suggestion">{{suggestion.suffix}}</span>
+                </div>
+            </div>
             <div class="command_structure" data-if="command_structure.size > 0">
-                <span data-for="link : command_structure">
-                    {{link.message}}
-                </span>
+                <span data-for="structure : command_structure"
+                    data-class-command_structure_item_selected="structure.selected"
+                    data-class-command_structure_item="!structure.selected">{{structure.message}} </span>
             </div>
             <div class="input_wrap">
                 <input id="console_input" type="text" class="console_input"></input>

@@ -12,9 +12,7 @@
         </div>
         <div class="copyright" data-model="main_scene">{{copyright}}</div>
         <div class="links" data-model="main_scene">
-            <a data-for="link : footerLinks" href="{{link.url}}">
-                {{link.text}}
-            </a>
+            <a data-for="link : footer_links" href="{{link.url}}">{{link.text}}</a>
         </div>
     </body>
 </rml>
