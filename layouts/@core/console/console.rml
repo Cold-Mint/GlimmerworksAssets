@@ -24,7 +24,7 @@
                     data-class-command_structure_item="!structure.selected">{{structure.message}} </span>
             </div>
             <div class="input_wrap">
-                <input id="console_input" type="text" class="console_input"></input>
+                <input id="console_input" type="text" class="console_input" data-event-keydown="on_console_keydown" data-event-change="on_console_change"></input>
                 <span id="autocomplete_hint" class="autocomplete_tip">{{console_placeholder}}</span>
             </div>
 

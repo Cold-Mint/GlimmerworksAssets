@@ -4,14 +4,14 @@
         <link type="text/rcss" href="main.rcss" />
     </head>
 
-    <body class="main">
+    <body class="main" data-model="main_scene">
         <p class="title">glimmerWorks</p>
         <div class="button_container">
-            <button id="start_game">start_game</button>
-            <button id="exit_game">exit_game</button>
+            <button id="start_game" data-event-click="on_start_game_click">start_game</button>
+            <button id="exit_game" data-event-click="on_exit_game_click">exit_game</button>
         </div>
-        <div class="copyright" data-model="main_scene">{{copyright}}</div>
-        <div class="links" data-model="main_scene">
+        <div class="copyright">{{copyright}}</div>
+        <div class="links">
             <a data-for="link : footer_links" href="{{link.url}}">{{link.text}}</a>
         </div>
     </body>
