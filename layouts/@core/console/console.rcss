@@ -113,7 +113,7 @@
     cursor: pointer;
 }
 
-.suggestion_item:hover{
+.suggestion_item_selected{
 background-color: #D3D3D3;
 }
 
