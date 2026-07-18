@@ -1,0 +1,33 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss" />
+        <link type="text/rcss" href="create_world.rcss" />
+    </head>
+
+    <body class="page" data-model="create_world_scene">
+        <div class="card">
+            <h1>Create World</h1>
+            
+            <div class="field">
+                <label>World Name</label>
+                <div class="input-row">
+                    <input type="text" data-value="world_name" />
+                    <button data-event-click="on_random_click('name')">Random</button>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Seed</label>
+                <div class="input-row">
+                    <input type="text" data-value="seed" />
+                    <button data-event-click="on_random_click('seed')">Random</button>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="primary" data-event-click="on_create_world_click">Create</button>
+                <button class="secondary" data-event-click="on_back_click">Back</button>
+            </div>
+        </div>
+    </body>
+</rml>

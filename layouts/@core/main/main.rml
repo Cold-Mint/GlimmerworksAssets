@@ -4,7 +4,7 @@
         <link type="text/rcss" href="main.rcss" />
     </head>
 
-    <body class="main" data-model="main_scene">
+    <body class="page" data-model="main_scene">
         <p class="title">glimmerWorks</p>
         <div class="button_container">
             <button id="start_game" data-event-click="on_start_game_click">start_game</button>
