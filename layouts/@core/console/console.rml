@@ -13,7 +13,7 @@
             </p>
         </div>
         <div class="bottom_bar">
-            <div class="suggestion_list" data-if="command_suggestions.size > 0">
+            <div id="suggestion_list" class="suggestion_list" data-if="command_suggestions.size > 0">
                     <div class="suggestion_item" data-for="suggestion : command_suggestions" data-event-click="on_suggest_click(suggestion.message)" data-event-mouseover="on_suggest_hover(it_index)" data-class-suggestion_item_selected="suggestion.selected">
                         <span class="suggestion">{{suggestion.prefix}}</span><span class="suggestion_keyword">{{suggestion.keyword}}</span><span class="suggestion">{{suggestion.suffix}}</span>
                     </div>
