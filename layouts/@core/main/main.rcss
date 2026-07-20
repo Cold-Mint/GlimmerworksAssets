@@ -9,8 +9,10 @@
 }
 
 .title {
-    position: absolute;
+position: absolute;
     top: 40dp;
+    left: 0;
+    right: 0;
     font-size: 32dp;
     font-weight: bold;
     color: #fff;

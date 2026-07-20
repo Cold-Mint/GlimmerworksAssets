@@ -83,12 +83,14 @@
 .button_container {
     position: absolute;
     bottom: 40dp;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 12dp;
+    gap: 20dp;
 }
 
 .button_container button {
-    width: 200dp;
+    width: 150dp;
 }
