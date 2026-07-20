@@ -33,18 +33,20 @@
     position: absolute;
     bottom: 20dp;
     left: 20dp;
-    font-size: 14dp;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 16dp;
+    color: #ffffff;
+    z-index: 10;
 }
 
 .links {
     position: absolute;
     bottom: 20dp;
     right: 20dp;
-    font-size: 14dp;
+    font-size: 16dp;
+    z-index: 10;
 }
 
 .links a {
     margin-left: 15dp;
-    color: rgba(255, 255, 255, 0.7);
+    color: #818cf8;
 }

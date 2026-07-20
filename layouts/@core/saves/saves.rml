@@ -9,7 +9,7 @@
         <div class="save_list" data-if="save_items.size > 0">
             <div class="save_item" data-for="save_item : save_items" data-event-click="on_save_click(save_item.index)" data-class-selected="save_item.selected">
                 <div class="save_label">{{save_item.label}}</div>
-                <button class="delete_button" data-event-click="on_delete_click(save_item.index)">delete</button>
+                <button class="delete_button" data-event-click="on_delete_click(save_item.index)">delete_game</button>
             </div>
         </div>
         <div class="no_saves" data-if="save_items.size == 0">

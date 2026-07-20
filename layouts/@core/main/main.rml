@@ -12,7 +12,7 @@
         </div>
         <div class="copyright">{{copyright}}</div>
         <div class="links">
-            <a data-for="link : footer_links" href="{{link.url}}">{{link.text}}</a>
+            <a data-for="link : footer_links" href="{{link.url}}" data-event-click="on_link_click(link.url)">{{link.text}}</a>
         </div>
     </body>
 </rml>

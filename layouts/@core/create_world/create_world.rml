@@ -6,13 +6,13 @@
 
     <body class="page" data-model="create_world_scene">
         <div class="card">
-            <h1>Create World</h1>
+            <h1>create_world</h1>
             
             <div class="field">
                 <label>World Name</label>
                 <div class="input-row">
                     <input type="text" data-value="world_name" />
-                    <button data-event-click="on_random_click('name')">Random</button>
+                    <button data-event-click="on_random_click('name')">random</button>
                 </div>
             </div>
 
@@ -20,7 +20,7 @@
                 <label>Seed</label>
                 <div class="input-row">
                     <input type="text" data-value="seed" />
-                    <button data-event-click="on_random_click('seed')">Random</button>
+                    <button data-event-click="on_random_click('seed')">random</button>
                 </div>
             </div>
 
