@@ -83,14 +83,17 @@
 .button_container {
     position: absolute;
     bottom: 40dp;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20dp;
+    justify-content: center;
+    gap: 30dp;
+    z-index: 10;
 }
 
 .button_container button {
     width: 150dp;
+    flex-shrink: 0;
 }

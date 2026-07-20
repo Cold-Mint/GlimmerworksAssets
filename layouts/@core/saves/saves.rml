@@ -16,7 +16,7 @@
             <p>No saves</p>
         </div>
         <div class="button_container">
-            <button data-event-click="on_new_game_click">new_game</button>
+            <button data-event-click="on_new_game_click">create_world</button>
             <button data-event-click="on_back_click">back</button>
         </div>
     </body>

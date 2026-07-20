@@ -25,7 +25,7 @@
             </div>
 
             <div class="actions">
-                <button class="primary" data-event-click="on_create_world_click">Create</button>
+                <button class="primary" data-event-click="on_create_world_click">create</button>
                 <button class="secondary" data-event-click="on_back_click">Back</button>
             </div>
         </div>

@@ -66,11 +66,13 @@
 .actions {
     display: flex;
     flex-direction: column;
-    gap: 12dp;
+    gap: 15dp;
     margin-top: 30dp;
 }
 
 .actions button {
     width: 100%;
     padding: 16dp;
+    position: relative;
+    z-index: 1;
 }
