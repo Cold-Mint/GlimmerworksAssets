@@ -1,0 +1,86 @@
+<rml>
+<head>
+	<link type="text/rcss" href="../../global.rcss"/>
+	<link type="text/rcss" href="hotbar.rcss"/>
+	<link type="text/template" href="../../templates/item_slot/item_slot.rml"/>
+	<link type="text/template" href="../../templates/tooltip/tooltip.rml"/>
+</head>
+<body id="hotbar">
+	<div id="hotbar_container">
+		<div id="slot_0" class="hotbar_slot" data-slot-index="0">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_1" class="hotbar_slot" data-slot-index="1">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_2" class="hotbar_slot" data-slot-index="2">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_3" class="hotbar_slot" data-slot-index="3">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_4" class="hotbar_slot" data-slot-index="4">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_5" class="hotbar_slot" data-slot-index="5">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_6" class="hotbar_slot" data-slot-index="6">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_7" class="hotbar_slot" data-slot-index="7">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+		<div id="slot_8" class="hotbar_slot" data-slot-index="8">
+			<template src="item_slot">
+				<img class="item_icon"/>
+				<span class="item_count hidden"></span>
+			</template>
+		</div>
+	</div>
+	<div id="tooltip_container">
+		<template src="tooltip">
+			<div class="tooltip_header">
+				<img class="tooltip_icon"/>
+				<div>
+					<div class="tooltip_name"></div>
+					<div class="tooltip_type"></div>
+				</div>
+			</div>
+			<div class="tooltip_divider"></div>
+			<div class="tooltip_description"></div>
+			<div class="tooltip_stats">
+				<div class="tooltip_stat">
+					<span class="tooltip_stat_name"></span>
+					<span class="tooltip_stat_value"></span>
+				</div>
+			</div>
+			<div class="tooltip_footer"></div>
+		</template>
+	</div>
+</body>
+</rml>

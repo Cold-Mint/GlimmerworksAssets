@@ -1,0 +1,118 @@
+.tooltip {
+    min-width: 200dp;
+    max-width: 320dp;
+    background-color: rgba(20, 20, 35, 0.95);
+    border-top-width: 2dp;
+    border-right-width: 2dp;
+    border-bottom-width: 2dp;
+    border-left-width: 2dp;
+    border-top-color: #5a5a8a;
+    border-right-color: #3a3a6a;
+    border-bottom-color: #3a3a6a;
+    border-left-color: #5a5a8a;
+    padding: 12dp;
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 4dp 16dp rgba(0, 0, 0, 0.5);
+}
+
+#tooltip_content {
+    display: flex;
+    flex-direction: column;
+    gap: 8dp;
+}
+
+.tooltip_header {
+    display: flex;
+    align-items: center;
+    gap: 12dp;
+}
+
+.tooltip_icon {
+    width: 40dp;
+    height: 40dp;
+}
+
+.tooltip_name {
+    font-size: 18dp;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tooltip_name.common {
+    color: #ffffff;
+}
+
+.tooltip_name.uncommon {
+    color: #00ff88;
+}
+
+.tooltip_name.rare {
+    color: #0088ff;
+}
+
+.tooltip_name.epic {
+    color: #aa00ff;
+}
+
+.tooltip_name.legendary {
+    color: #ffaa00;
+}
+
+.tooltip_type {
+    font-size: 14dp;
+    color: #a0a0c0;
+    font-style: italic;
+}
+
+.tooltip_divider {
+    height: 1dp;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 4dp 0;
+}
+
+.tooltip_description {
+    font-size: 14dp;
+    color: #c0c0d0;
+    line-height: 1.4;
+}
+
+.tooltip_stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4dp;
+}
+
+.tooltip_stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14dp;
+}
+
+.tooltip_stat_name {
+    color: #a0a0c0;
+}
+
+.tooltip_stat_value {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tooltip_stat_value.positive {
+    color: #00ff88;
+}
+
+.tooltip_stat_value.negative {
+    color: #ff4444;
+}
+
+.tooltip_footer {
+    font-size: 12dp;
+    color: #8080a0;
+    margin-top: 8dp;
+}
+
+.tooltip_hidden {
+    display: none;
+}

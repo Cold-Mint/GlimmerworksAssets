@@ -1,0 +1,51 @@
+#hotbar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+#hotbar_container {
+    position: absolute;
+    bottom: 20dp;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8dp;
+    padding: 12dp;
+    background-color: rgba(10, 10, 20, 0.6);
+    border-top-width: 2dp;
+    border-right-width: 2dp;
+    border-bottom-width: 2dp;
+    border-left-width: 2dp;
+    border-top-color: #4a4a6a;
+    border-right-color: #2a2a4a;
+    border-bottom-color: #2a2a4a;
+    border-left-color: #4a4a6a;
+    pointer-events: auto;
+}
+
+.hotbar_slot {
+    cursor: pointer;
+}
+
+.hotbar_slot .item_slot {
+}
+
+.hotbar_slot .item_slot.selected {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 8dp rgba(255, 215, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 16dp rgba(255, 215, 0, 0.8);
+    }
+}
+
+#tooltip_container {
+    position: absolute;
+    pointer-events: none;
+}

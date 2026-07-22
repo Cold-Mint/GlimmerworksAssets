@@ -1,6 +1,6 @@
 <rml>
     <head>
-        <link type="text/rcss" href="../global.rcss" />
+        <link type="text/rcss" href="../../global.rcss" />
         <link type="text/rcss" href="saves.rcss" />
     </head>
 

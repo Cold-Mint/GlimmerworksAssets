@@ -1,0 +1,68 @@
+.item_slot {
+    width: 48dp;
+    height: 48dp;
+    border-top-width: 2dp;
+    border-right-width: 2dp;
+    border-bottom-width: 2dp;
+    border-left-width: 2dp;
+    border-top-color: #4a4a6a;
+    border-right-color: #2a2a4a;
+    border-bottom-color: #2a2a4a;
+    border-left-color: #4a4a6a;
+    background-color: rgba(30, 30, 50, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+.item_slot:hover {
+    border-top-color: #6a6a8a;
+    border-right-color: #4a4a6a;
+    border-bottom-color: #4a4a6a;
+    border-left-color: #6a6a8a;
+    background-color: rgba(40, 40, 60, 0.8);
+}
+
+.item_slot.selected {
+    border-top-color: #ffd700;
+    border-right-color: #b8860b;
+    border-bottom-color: #b8860b;
+    border-left-color: #ffd700;
+    box-shadow: 0 0 8dp rgba(255, 215, 0, 0.5);
+}
+
+.item_slot.empty {
+    border-top-color: #3a3a5a;
+    border-right-color: #252545;
+    border-bottom-color: #252545;
+    border-left-color: #3a3a5a;
+    background-color: rgba(20, 20, 40, 0.5);
+}
+
+#slot_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item_icon {
+    width: 36dp;
+    height: 36dp;
+}
+
+.item_count {
+    position: absolute;
+    bottom: 2dp;
+    left: 2dp;
+    font-size: 12dp;
+    font-weight: bold;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.item_count.hidden {
+    display: none;
+}
