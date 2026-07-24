@@ -8,9 +8,9 @@
 		<div class="hotbar_container">
 			<div class="hotbar_slot" data-for="slot : item_slots">
 				<div class="item_slot" data-class-selected="slot.selected" data-class-empty="!slot.selected">
-					<div class="slot_content" data-if="slot.image != ''">
-						<img class="item_icon" data-src="{{slot.image}}" />
-						<span class="item_count" data-if="slot.amount > 1">{{slot.amount}}</span>
+					<div class="slot_content">
+						<img class="item_icon" data-attr-src="slot.image" />
+						<span class="item_count">{{slot.amount}}</span>
 					</div>
 				</div>
 			</div>

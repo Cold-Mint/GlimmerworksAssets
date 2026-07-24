@@ -30,7 +30,6 @@
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 .hotbar_slot .item_slot:hover {
     border-top-color: #6a6a8a;
     border-right-color: #4a4a6a;
