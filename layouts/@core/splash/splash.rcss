@@ -1,3 +1,6 @@
+/* English: Styles for the splash screen page. */
+/* 中文：启动画面页面样式。 */
+
 .splash {
     position: absolute;
     width: 100%;

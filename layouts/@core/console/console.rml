@@ -1,7 +1,8 @@
 <rml>
-
+    <!-- English: Console overlay page layout. -->
+    <!-- 中文：控制台覆盖层页面布局。 -->
     <head>
-        <link type="text/rcss" href="../../global.rcss" />
+        <link type="text/rcss" href="../global.rcss" />
         <link type="text/rcss" href="console.rcss" />
     </head>
 

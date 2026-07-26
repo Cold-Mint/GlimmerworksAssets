@@ -1,9 +1,0 @@
-<template name="item_slot" content="slot_content">
-<head>
-	<link type="text/rcss" href="item_slot.rcss"/>
-</head>
-<body class="item_slot">
-	<div id="slot_content">
-	</div>
-</body>
-</template>

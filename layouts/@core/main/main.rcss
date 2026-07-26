@@ -1,0 +1,32 @@
+/* English: Styles for the main menu page. */
+/* 中文：主菜单页面样式。 */
+
+.title {
+    position: absolute;
+    top: 40dp;
+    left: 0;
+    right: 0;
+    font-size: 32dp;
+    letter-spacing: 2dp;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 20dp;
+    left: 20dp;
+    font-size: 16dp;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.links {
+    position: absolute;
+    bottom: 20dp;
+    right: 20dp;
+    font-size: 16dp;
+    z-index: 10;
+}
+
+.links a {
+    margin-left: 15dp;
+}

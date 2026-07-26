@@ -1,0 +1,37 @@
+/* English: Styles for the hotbar overlay page. */
+/* 中文：快捷栏覆盖层页面样式。 */
+
+.hotbar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+.hotbar_container {
+    position: absolute;
+    top: 20dp;
+    left: 20dp;
+    display: flex;
+    gap: 8dp;
+    padding: 12dp;
+    pointer-events: auto;
+}
+
+.hotbar_slot {
+    cursor: pointer;
+}
+
+.hotbar_slot .item_slot {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hotbar_slot .slot_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

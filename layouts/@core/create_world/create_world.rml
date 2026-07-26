@@ -1,13 +1,15 @@
 <rml>
+    <!-- English: Create world page layout. -->
+    <!-- 中文：创建世界页面布局。 -->
     <head>
-        <link type="text/rcss" href="../../global.rcss" />
+        <link type="text/rcss" href="../global.rcss" />
         <link type="text/rcss" href="create_world.rcss" />
     </head>
 
     <body class="page" data-model="create_world_scene">
         <div class="card">
             <h1>create_world</h1>
-            
+
             <div class="field">
                 <label>World Name</label>
                 <div class="input-row">

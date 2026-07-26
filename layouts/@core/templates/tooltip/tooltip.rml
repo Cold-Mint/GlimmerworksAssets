@@ -1,9 +1,0 @@
-<template name="tooltip" content="tooltip_content">
-<head>
-	<link type="text/rcss" href="tooltip.rcss"/>
-</head>
-<body class="tooltip">
-	<div id="tooltip_content">
-	</div>
-</body>
-</template>

@@ -1,9 +1,11 @@
 <rml>
+<!-- English: Inventory page layout, uses reusable item_slot and tooltip templates. -->
+<!-- 中文：库存页面布局，复用 item_slot 与 tooltip 模板。 -->
 <head>
-	<link type="text/rcss" href="../../global.rcss"/>
+	<link type="text/rcss" href="../global.rcss"/>
 	<link type="text/rcss" href="inventory.rcss"/>
-	<link type="text/template" href="../../templates/item_slot.rml"/>
-	<link type="text/template" href="../../templates/tooltip.rml"/>
+	<link type="text/template" href="../../templates/item_slot/item_slot.rml"/>
+	<link type="text/template" href="../../templates/tooltip/tooltip.rml"/>
 </head>
 <body id="inventory">
 	<div id="inventory_container">
