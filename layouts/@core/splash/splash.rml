@@ -1,6 +1,4 @@
 <rml>
-    <!-- English: Splash screen page layout. -->
-    <!-- 中文：启动画面页面布局。 -->
     <head>
         <link type="text/rcss" href="../global.rcss" />
         <link type="text/rcss" href="splash.rcss" />

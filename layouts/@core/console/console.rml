@@ -1,34 +1,37 @@
 <rml>
-    <!-- English: Console overlay page layout. -->
-    <!-- 中文：控制台覆盖层页面布局。 -->
     <head>
-        <link type="text/rcss" href="../global.rcss" />
-        <link type="text/rcss" href="console.rcss" />
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="console.rcss"/>
     </head>
 
     <body class="console" data-model="console_scene">
-        <p>console</p>
-        <div class="top_content">
-            <p data-for="messageItem : console_messages">
-                {{messageItem.message}}
-            </p>
-        </div>
-        <div class="bottom_bar">
-            <div id="suggestion_list" class="suggestion_list" data-if="command_suggestions.size > 0">
-                    <div class="suggestion_item" data-for="suggestion : command_suggestions" data-event-click="on_suggest_click(suggestion.message)" data-event-mouseover="on_suggest_hover(it_index)" data-class-suggestion_item_selected="suggestion.selected">
-                        <span class="suggestion">{{suggestion.prefix}}</span><span class="suggestion_keyword">{{suggestion.keyword}}</span><span class="suggestion">{{suggestion.suffix}}</span>
-                    </div>
+    <p>console</p>
+    <div class="top_content">
+        <p data-for="messageItem : console_messages">
+            {{messageItem.message}}
+        </p>
+    </div>
+    <div class="bottom_bar">
+        <div id="suggestion_list" class="suggestion_list" data-if="command_suggestions.size > 0">
+            <div class="suggestion_item" data-for="suggestion : command_suggestions"
+                 data-event-click="on_suggest_click(suggestion.message)"
+                 data-event-mouseover="on_suggest_hover(it_index)"
+                 data-class-suggestion_item_selected="suggestion.selected">
+                <span class="suggestion">{{suggestion.prefix}}</span><span class="suggestion_keyword">{{suggestion.keyword}}</span><span
+                    class="suggestion">{{suggestion.suffix}}</span>
             </div>
-            <div class="command_structure" data-if="command_structure.size > 0">
+        </div>
+        <div class="command_structure" data-if="command_structure.size > 0">
                 <span data-for="structure : command_structure"
-                    data-class-command_structure_item_selected="structure.selected"
-                    data-class-command_structure_item="!structure.selected">{{structure.message}} </span>
-            </div>
-            <div class="input_wrap">
-                <input id="console_input" type="text" class="console_input" data-event-keydown="on_console_keydown" data-event-change="on_console_change"></input>
-                <span id="autocomplete_hint" class="autocomplete_tip">{{console_placeholder}}</span>
-            </div>
-
+                      data-class-command_structure_item_selected="structure.selected"
+                      data-class-command_structure_item="!structure.selected">{{structure.message}} </span>
         </div>
+        <div class="input_wrap">
+            <input id="console_input" type="text" class="console_input" data-event-keydown="on_console_keydown"
+                   data-event-change="on_console_change"></input>
+            <span id="autocomplete_hint" class="autocomplete_tip">{{console_placeholder}}</span>
+        </div>
+
+    </div>
     </body>
 </rml>

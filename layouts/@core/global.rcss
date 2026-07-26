@@ -1,204 +1,24 @@
-/* English: Global shared styles for all @core RML layouts. */
-/* 中文：@core 下所有 RML 布局的公共样式。 */
-
-/* English: Reset and base element styles. */
-/* 中文：重置与基础元素样式。 */
 * {
     font-family: core;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-}
-
-/* English: Base styles for page root containers. */
-/* 中文：页面根容器的基础样式。 */
-.page {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #1a1a2e;
-}
-
-/* English: Base styles for page titles. */
-/* 中文：页面标题的基础样式。 */
-.title {
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-}
-
-/* English: Base styles for vertical button containers. */
-/* 中文：垂直按钮容器的基础样式。 */
-.button_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15dp;
-}
-
-.button_container button {
-    width: 200dp;
-}
-
-/* English: Base button styles. */
-/* 中文：按钮基础样式。 */
 button {
-    padding: 16dp 32dp;
-    font-size: 16dp;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #6366f1;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    border-top-left-radius: 12dp;
-    border-top-right-radius: 12dp;
-    border-bottom-right-radius: 12dp;
-    border-bottom-left-radius: 12dp;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.2s;
-    text-align: center;
+    padding-left: 8dp;
+    padding-right: 8dp;
+    padding-top: 16dp;
+    padding-bottom: 16dp;
+    decorator: ninepatch-texture("texture://@core:gui/button", 2px, 2px, 2px, 2px);
 }
 
 button:hover {
-    opacity: 0.9;
+    decorator: ninepatch-texture("texture://@core:gui/button_hovered", 2px, 2px, 2px, 2px);
 }
 
-button.primary {
-    background-color: #10b981;
+button:active {
+    decorator: ninepatch-texture("texture://@core:gui/button_pressed", 2px, 2px, 2px, 2px);
 }
 
-button.secondary {
-    background-color: transparent;
-    border-top-width: 1dp;
-    border-right-width: 1dp;
-    border-bottom-width: 1dp;
-    border-left-width: 1dp;
-    border-top-color: rgba(255, 255, 255, 0.2);
-    border-right-color: rgba(255, 255, 255, 0.2);
-    border-bottom-color: rgba(255, 255, 255, 0.2);
-    border-left-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.9);
-}
-
-button.secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-button.danger {
-    background-color: #ef4444;
-}
-
-button.small {
-    padding: 12dp 20dp;
-    font-size: 14dp;
-    border-top-left-radius: 8dp;
-    border-top-right-radius: 8dp;
-    border-bottom-right-radius: 8dp;
-    border-bottom-left-radius: 8dp;
-}
-
-/* English: Base input styles. */
-/* 中文：输入框基础样式。 */
-input {
-    padding: 16dp 20dp;
-    font-size: 16dp;
-    background-color: rgba(255, 255, 255, 0.06);
-    border-top-width: 1dp;
-    border-right-width: 1dp;
-    border-bottom-width: 1dp;
-    border-left-width: 1dp;
-    border-top-color: rgba(255, 255, 255, 0.12);
-    border-right-color: rgba(255, 255, 255, 0.12);
-    border-bottom-color: rgba(255, 255, 255, 0.12);
-    border-left-color: rgba(255, 255, 255, 0.12);
-    border-top-left-radius: 12dp;
-    border-top-right-radius: 12dp;
-    border-bottom-right-radius: 12dp;
-    border-bottom-left-radius: 12dp;
-    color: #ffffff;
-}
-
-input:focus {
-    border-top-color: #818cf8;
-    border-right-color: #818cf8;
-    border-bottom-color: #818cf8;
-    border-left-color: #818cf8;
-    background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* English: Base link styles. */
-/* 中文：链接基础样式。 */
-a {
-    color: #818cf8;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #a5b4fc;
-    text-decoration: underline;
-}
-
-/* English: Common item slot styles used by inventory and hotbar. */
-/* 中文：库存与快捷栏共用的物品槽样式。 */
-.item_slot {
-    width: 48dp;
-    height: 48dp;
-    border-top-width: 2dp;
-    border-right-width: 2dp;
-    border-bottom-width: 2dp;
-    border-left-width: 2dp;
-    position: relative;
-    overflow: hidden;
-}
-
-.item_slot:hover {
-    border-top-color: #6a6a8a;
-    border-right-color: #4a4a6a;
-    border-bottom-color: #4a4a6a;
-    border-left-color: #6a6a8a;
-}
-
-.item_slot.selected {
-    border-top-color: #ffd700;
-    border-right-color: #b8860b;
-    border-bottom-color: #b8860b;
-    border-left-color: #ffd700;
-    box-shadow: 0 0 8dp rgba(255, 215, 0, 0.5);
-}
-
-.item_slot.empty {
-    border-top-color: #3a3a5a;
-    border-right-color: #252545;
-    border-bottom-color: #252545;
-    border-left-color: #3a3a5a;
-}
-
-/* English: Shared item icon and count widgets. */
-/* 中文：共用的物品图标与数量显示组件。 */
-.item_icon {
-    width: 36dp;
-    height: 36dp;
-}
-
-.item_count {
-    position: absolute;
-    bottom: 2dp;
-    left: 2dp;
-    font-size: 12dp;
-    font-weight: bold;
-    color: #ffffff;
-    pointer-events: none;
-}
-
-.item_count.hidden {
-    display: none;
+button:disabled {
+    decorator: ninepatch-texture("texture://@core:gui/button_disabled", 2px, 2px, 2px, 2px);
 }

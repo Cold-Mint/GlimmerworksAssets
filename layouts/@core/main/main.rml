@@ -1,20 +1,20 @@
 <rml>
-    <!-- English: Main menu page layout. -->
-    <!-- 中文：主菜单页面布局。 -->
     <head>
-        <link type="text/rcss" href="../global.rcss" />
-        <link type="text/rcss" href="main.rcss" />
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="main.rcss"/>
     </head>
 
     <body class="page" data-model="main_scene">
-        <p class="title">glimmerWorks</p>
-        <div class="button_container">
-            <button id="start_game" data-event-click="on_start_game_click">start_game</button>
-            <button id="exit_game" data-event-click="on_exit_game_click">exit_game</button>
-        </div>
-        <div class="copyright">{{copyright}}</div>
-        <div class="links">
-            <a data-for="link : footer_links" href="{{link.url}}" data-event-click="on_link_click(link.url)">{{link.text}}</a>
-        </div>
+    <img class="main_menu_background" data-attr-src="main_menu_background" />
+    <div class="logo"></div>
+    <div class="button_container">
+        <button id="start_game" data-event-click="on_start_game_click">start_game</button>
+        <button id="exit_game" data-event-click="on_exit_game_click">exit_game</button>
+    </div>
+    <div class="copyright">{{copyright}}</div>
+    <div class="links">
+        <a data-for="link : footer_links" href="{{link.url}}"
+           data-event-click="on_link_click(link.url)">{{link.text}}</a>
+    </div>
     </body>
 </rml>
