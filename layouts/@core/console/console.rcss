@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     padding: 8dp;
-    background-color: #1c1c1c;
-    gap: 8dp;
+
+    decorator: image("texture://@core:console_gui/console_background");
+    gap: 16dp;
 }
 
 .top_content {

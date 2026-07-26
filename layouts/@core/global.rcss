@@ -3,11 +3,25 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+    color: #818cf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a5b4fc;
+    text-decoration: underline;
+}
+
 button {
+    width: 200dp;
+    text-align: center;
     padding-left: 8dp;
     padding-right: 8dp;
     padding-top: 16dp;
     padding-bottom: 16dp;
+    cursor: pointer;
     decorator: ninepatch-texture("texture://@core:gui/button", 2px, 2px, 2px, 2px);
 }
 
@@ -21,4 +35,29 @@ button:active {
 
 button:disabled {
     decorator: ninepatch-texture("texture://@core:gui/button_disabled", 2px, 2px, 2px, 2px);
+}
+
+.panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16dp;
+    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+}
+
+.dark_text {
+    color: black;
+}
+
+input[type="text"] {
+    width: 200dp;
+    padding-left: 12dp;
+    padding-right: 8dp;
+    padding-top: 16dp;
+    padding-bottom: 16dp;
+    decorator: ninepatch-texture("texture://@core:gui/input_text", 2px, 2px, 2px, 2px);
+}
+
+h1 {
+    font-size: 24dp;
 }

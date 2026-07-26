@@ -5,7 +5,7 @@
     </head>
 
     <body class="console" data-model="console_scene">
-    <p>console</p>
+    <h1>console</h1>
     <div class="top_content">
         <p data-for="messageItem : console_messages">
             {{messageItem.message}}

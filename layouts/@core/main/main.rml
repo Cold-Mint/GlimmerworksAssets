@@ -11,7 +11,7 @@
         <button id="start_game" data-event-click="on_start_game_click">start_game</button>
         <button id="exit_game" data-event-click="on_exit_game_click">exit_game</button>
     </div>
-    <div class="copyright">{{copyright}}</div>
+    <label class="copyright">{{copyright}}</label>
     <div class="links">
         <a data-for="link : footer_links" href="{{link.url}}"
            data-event-click="on_link_click(link.url)">{{link.text}}</a>

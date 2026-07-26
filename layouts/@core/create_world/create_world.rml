@@ -1,33 +1,30 @@
 <rml>
     <head>
-        <link type="text/rcss" href="../global.rcss" />
-        <link type="text/rcss" href="create_world.rcss" />
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="create_world.rcss"/>
     </head>
 
     <body class="page" data-model="create_world_scene">
-        <div class="card">
-            <h1>create_world</h1>
+    <div class="panel">
+        <h1 class="dark_text">create_world</h1>
 
-            <div class="field">
-                <label>World Name</label>
-                <div class="input-row">
-                    <input type="text" data-value="world_name" />
-                    <button data-event-click="on_random_click('name')">random</button>
-                </div>
-            </div>
-
-            <div class="field">
-                <label>Seed</label>
-                <div class="input-row">
-                    <input type="text" data-value="seed" />
-                    <button data-event-click="on_random_click('seed')">random</button>
-                </div>
-            </div>
-
-            <div class="actions">
-                <button class="primary" data-event-click="on_create_world_click">create</button>
-                <button class="secondary" data-event-click="on_back_click">Back</button>
-            </div>
+        <div class="panel_item">
+            <label class="dark_text">World Name</label>
+            <input type="text" class="dark_text" data-value="world_name"/>
+            <button data-event-click="on_random_click('name')">random</button>
         </div>
+
+        <div class="panel_item">
+            <label class="dark_text">Seed</label>
+            <input type="text" class="dark_text" data-value="seed"/>
+            <button data-event-click="on_random_click('seed')">random</button>
+        </div>
+
+        <div class="panel_item">
+            <button class="primary" data-event-click="on_create_world_click">create</button>
+            <button class="secondary" data-event-click="on_back_click">Back</button>
+        </div>
+    </div>
+
     </body>
 </rml>

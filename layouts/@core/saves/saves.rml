@@ -1,13 +1,9 @@
 <rml>
-    <!-- English: Saved games page layout. -->
-    <!-- 中文：存档页面布局。 -->
     <head>
         <link type="text/rcss" href="../global.rcss"/>
-        <link type="text/rcss" href="saves.rcss"/>
     </head>
 
     <body class="page" data-model="saved_games_scene">
-    <p class="title">saved_games</p>
     <div class="save_list" data-if="save_items.size > 0">
         <div class="save_item" data-for="save_item : save_items" data-event-click="on_save_click(save_item.index)"
              data-class-selected="save_item.selected">
