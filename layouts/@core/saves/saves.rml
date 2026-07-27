@@ -9,7 +9,7 @@
         <h1 class="dark_text">saves_list</h1>
         <div class="search_bar">
             <img class="search_icon" src="texture://@core:gui/search_icon"/>
-            <input type="text" class="dark_text"/>
+            <input type="text" class="dark_text" data-value="search_keyword"/>
         </div>
 
         <div class="save_list" data-if="save_items.size > 0">
@@ -27,7 +27,7 @@
             <button disabled>load_game</button>
             <button data-event-click="on_new_game_click">create_world</button>
             <button data-event-click="on_back_click">back</button>
-            <button class="delete_button" data-event-click="on_delete_click(save_item.index)">delete_game</button>
+            <button class="delete_button" data-event-click="on_delete_click">delete_game</button>
         </div>
     </div>
     </body>
