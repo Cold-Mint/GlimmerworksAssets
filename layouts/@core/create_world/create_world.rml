@@ -9,20 +9,25 @@
         <h1 class="dark_text">create_world</h1>
 
         <div class="panel_item">
-            <label class="dark_text">World Name</label>
-            <input type="text" class="dark_text" data-value="world_name"/>
-            <button data-event-click="on_random_click('name')">random</button>
+            <label class="dark_text panel_item_label">world_name</label>
+            <input type="text" class="dark_text panel_item_input_text" data-value="world_name"/>
+            <button class="panel_item_button" data-event-click="on_random_name_click">random</button>
         </div>
 
         <div class="panel_item">
-            <label class="dark_text">Seed</label>
-            <input type="text" class="dark_text" data-value="seed"/>
-            <button data-event-click="on_random_click('seed')">random</button>
+            <label class="dark_text panel_item_label">seed</label>
+            <input type="text" class="dark_text panel_item_input_text" data-value="seed"/>
+            <button class="panel_item_button" data-event-click="on_random_seed_click">random</button>
         </div>
 
         <div class="panel_item">
-            <button class="primary" data-event-click="on_create_world_click">create</button>
-            <button class="secondary" data-event-click="on_back_click">Back</button>
+            <input type="checkbox" data-checked="allow_cheats"/>
+            <label class="dark_text panel_item_checkbox_label">allow_cheats</label>
+        </div>
+
+        <div class="panel_item">
+            <button class="panel_item_action_button_left" data-event-click="on_back_click">back</button>
+            <button class="panel_item_action_button_right" data-event-click="on_create_world_click">create</button>
         </div>
     </div>
 

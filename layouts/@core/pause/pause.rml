@@ -1,18 +1,13 @@
 <rml>
-    <!-- English: Pause menu page layout. -->
-    <!-- 中文：暂停菜单页面布局。 -->
     <head>
-        <link type="text/rcss" href="../global.rcss" />
-        <link type="text/rcss" href="pause.rcss" />
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="pause.rcss"/>
     </head>
     <body class="page" data-model="pause_system">
-        <div class="overlay"></div>
-        <div class="menu_container">
-            <p class="title">pause</p>
-            <div class="button_container">
-                <button id="resume_game" data-event-click="on_resume_button_click">resume_game</button>
-                <button id="save_and_exit" data-event-click="on_save_and_exit_button_click">save_and_exit</button>
-            </div>
-        </div>
+    <div class="panel">
+        <h1 class="title dark_text">pause</h1>
+        <button id="resume_game" data-event-click="on_resume_button_click">resume_game</button>
+        <button id="save_and_exit" data-event-click="on_save_and_exit_button_click">save_and_exit</button>
+    </div>
     </body>
 </rml>

@@ -1,21 +1,18 @@
 <rml>
-    <!-- English: Hotbar overlay page layout. -->
-    <!-- 中文：快捷栏覆盖层页面布局。 -->
     <head>
-        <link type="text/rcss" href="../global.rcss" />
-        <link type="text/rcss" href="hotbar.rcss" />
+        <link type="text/rcss" href="../global.rcss"/>
     </head>
 
     <body class="hotbar" data-model="hotbar">
-        <div class="hotbar_container">
-            <div class="hotbar_slot" data-for="slot : item_slots">
-                <div class="item_slot" data-class-selected="slot.selected" data-class-empty="!slot.selected">
-                    <div class="slot_content" data-if="slot.image != ''">
-                        <img class="item_icon" data-attr-src="slot.image" />
-                        <span class="item_count">{{slot.amount}}</span>
-                    </div>
+    <div class="hotbar_container">
+        <div class="hotbar_slot" data-for="slot : item_slots">
+            <div class="item_slot" data-class-selected="slot.selected" data-class-empty="!slot.selected">
+                <div class="slot_content" data-if="slot.image != ''">
+                    <img class="item_icon" data-attr-src="slot.image"/>
+                    <span class="item_count">{{slot.amount}}</span>
                 </div>
             </div>
         </div>
+    </div>
     </body>
 </rml>

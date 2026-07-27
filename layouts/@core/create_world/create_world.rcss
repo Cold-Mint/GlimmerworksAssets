@@ -10,6 +10,32 @@
 .panel_item {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+}
+
+.panel_item_input_text {
+    flex-grow: 1;
+}
+
+.panel_item_label {
+    width: 64dp;
+}
+
+.panel_item_checkbox_label {
+    margin-left: 8dp;
+}
+
+.panel_item_button {
+    margin-left: 8dp;
+    width: 64dp;
+}
+
+.panel_item_action_button_left {
+    margin-right: 4dp;
+    flex-grow: 1;
+}
+
+.panel_item_action_button_right{
+    margin-left: 4dp;
+    flex-grow: 1;
 }

@@ -1,0 +1,66 @@
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+
+.search_bar {
+    position: relative;
+}
+
+.cheat_mode {
+    color: red;
+}
+
+.search_icon {
+    position: absolute;
+    right: 16dp;
+    top: 10dp;
+    width: 24dp;
+    height: 24dp;
+}
+
+.save_item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8dp;
+    padding: 16dp;
+}
+
+.save_item:hover {
+    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+}
+
+.save_list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.panel {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+}
+
+.action_buttons {
+    margin-top: 16dp;
+    margin-bottom: 16dp;
+}
