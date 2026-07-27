@@ -4,10 +4,22 @@
     display: flex;
     flex-direction: column;
     padding: 8dp;
-
     decorator: image("texture://@core:console_gui/console_background");
     gap: 16dp;
 }
+
+input[type="text"] {
+    width: 100%;
+    padding-left: 12dp;
+    padding-right: 8dp;
+    padding-top: 16dp;
+    padding-bottom: 16dp;
+    color: white;
+    z-index: 2;
+    font-size: 14dp;
+    decorator: ninepatch-texture("texture://@core:console_gui/input_text", 12px, 12px, 12px, 12px);
+}
+
 
 .top_content {
     display: flex;
@@ -15,8 +27,16 @@
     overflow-y: auto;
     overflow-x: hidden;
     flex-direction: column;
-    padding: 6dp;
-    border-radius: 4dp;
+    padding: 8dp;
+    decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
+}
+
+.top_content_label {
+    font-size: 14dp;
+    padding-top: 4dp;
+    padding-bottom: 4dp;
+    border-bottom-width: 1dp;
+    border-bottom-color: white;
 }
 
 .command_structure_item {
@@ -40,25 +60,17 @@
     position: relative;
     width: 100%;
     height: 32dp;
+    margin-top: 16dp;
+    margin-bottom: 8dp;
     display: flex;
     align-items: center;
 }
 
-.console_input {
-    height: 100%;
-    width: 100%;
-    padding: 8dp;
-    border-radius: 4dp;
-    position: relative;
-    z-index: 2;
-    font-size: 14dp;
-    line-height: 100%;
-    margin: 0;
-}
-
 .command_structure {
+    margin-top: 16dp;
     padding: 8dp;
     font-size: 14dp;
+    decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
 }
 
 .suggestion_keyword {
@@ -83,6 +95,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
+    decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
 }
 
 .suggestion_list scrollbarvertical {
@@ -117,11 +130,9 @@
 
 .autocomplete_tip {
     position: absolute;
-    top: 0;
-    height: 100%;
-    padding: 8dp;
-    width: 100%;
-    line-height: 100%;
+    inset: 0;
+    top: 8dp;
+    left: 12dp;
     color: #555555;
     font-size: 14dp;
     z-index: 1;

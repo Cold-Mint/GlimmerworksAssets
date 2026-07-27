@@ -7,9 +7,9 @@
     <body class="console" data-model="console_scene">
     <h1>console</h1>
     <div class="top_content">
-        <p data-for="messageItem : console_messages">
+        <label class="top_content_label" data-for="messageItem : console_messages">
             {{messageItem.message}}
-        </p>
+        </label>
     </div>
     <div class="bottom_bar">
         <div id="suggestion_list" class="suggestion_list" data-if="command_suggestions.size > 0">
