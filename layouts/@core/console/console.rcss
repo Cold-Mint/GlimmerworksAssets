@@ -94,26 +94,11 @@ input[type="text"] {
     max-height: 25vh;
     overflow-y: auto;
     overflow-x: hidden;
-    position: relative;
     decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
 }
 
 .suggestion_list scrollbarvertical {
-    width: 12dp;
-}
-
-.suggestion_list scrollbarvertical slidertrack {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.suggestion_list scrollbarvertical sliderbar {
-    width: 12dp;
-    min-height: 20dp;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.suggestion_list scrollbarvertical sliderbar:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 1dp;
 }
 
 .suggestion_item {

@@ -37,6 +37,10 @@ input[type="text"] {
     padding: 16dp;
 }
 
+.save_list scrollbarvertical {
+    width: 1dp;
+}
+
 .save {
     color: black;
 }
@@ -60,7 +64,6 @@ input[type="text"] {
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    position: relative;
 }
 
 .no_saves {
