@@ -75,6 +75,18 @@ input[type="text"] {
 }
 
 .action_buttons {
-    margin-top: 16dp;
-    margin-bottom: 16dp;
+    display: flex;
+    flex-direction: row;
+    gap: 8dp;
+}
+
+.action_buttons_area{
+     display: flex;
+    flex-direction: column;
+    gap:8dp;
+}
+
+button {
+    margin: 0dp;
+    flex: 1;
 }

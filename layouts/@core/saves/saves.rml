@@ -29,12 +29,17 @@
         <div class="no_saves" data-if="save_items.size == 0">
             <h2 class="dark_text">no_saves</h2>
         </div>
-        <div class="action_buttons">
+        <div class="action_buttons_area">
+            <div class="action_buttons">
             <button data-attrif-disabled="!has_valid_selection" data-event-click="on_load_click">load_game</button>
+
             <button data-event-click="on_new_game_click">create_world</button>
-            <button data-event-click="on_back_click">back</button>
-            <button class="delete_button" data-attrif-disabled="!has_valid_selection" data-event-click="on_delete_click">delete_game</button>
         </div>
+        <div class="action_buttons">
+            <button class="delete_button" data-attrif-disabled="!has_valid_selection"
+                    data-event-click="on_delete_click">delete_game</button>
+            <button data-event-click="on_back_click">back</button>
+        </div></div>
     </div>
     </body>
 </rml>
