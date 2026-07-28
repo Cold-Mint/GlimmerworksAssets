@@ -15,23 +15,25 @@
 
         <div class="save_list" id="save_list" data-if="save_items.size > 0">
             <div class="save_item" data-for="save_item : save_items"
-                 data-event-click="on_save_select(save_item.index);on_save_click(save_item.index)"
+                 data-event-click="on_save_select(save_item.index)"
+                 data-event-dblclick="on_save_dblclick(save_item.index)"
                  data-class-selected="save_item.selected">
-                <h2 class="dark_text save_label"><span class="save">{{save_item.prefix}}</span><span
-                        class="save_keyword">{{save_item.keyword}}</span><span class="save">{{save_item.suffix}}</span>
+                <h2><span class="dark_text">{{save_item.prefix}}</span><span
+                        class="save_keyword">{{save_item.keyword}}</span><span
+                        class="dark_text">{{save_item.suffix}}</span>
                 </h2>
                 <h3 data-if="save_item.allow_cheats" class="cheat_mode">cheats_mode</h3>
-                <label class="dark_text save_label">{{save_item.last_played_time}}</label>
+                <label class="dark_text">{{save_item.last_played_time}}</label>
             </div>
         </div>
         <div class="no_saves" data-if="save_items.size == 0">
             <h2 class="dark_text">no_saves</h2>
         </div>
         <div class="action_buttons">
-            <button disabled>load_game</button>
+            <button data-attrif-disabled="!has_valid_selection" data-event-click="on_load_click">load_game</button>
             <button data-event-click="on_new_game_click">create_world</button>
             <button data-event-click="on_back_click">back</button>
-            <button class="delete_button" data-event-click="on_delete_click">delete_game</button>
+            <button class="delete_button" data-attrif-disabled="!has_valid_selection" data-event-click="on_delete_click">delete_game</button>
         </div>
     </div>
     </body>

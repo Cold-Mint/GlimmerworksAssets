@@ -41,21 +41,12 @@ input[type="text"] {
     width: 1dp;
 }
 
-.save {
-    color: black;
-}
-
 .save_keyword {
     color: #16a34a;
 }
 
-.save_item:hover {
-    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
-}
-
 .save_item.selected {
     decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
-    background-color: rgba(22, 163, 74, 0.2);
 }
 
 .save_list {
