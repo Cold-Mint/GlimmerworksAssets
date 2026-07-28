@@ -37,6 +37,14 @@ input[type="text"] {
     padding: 16dp;
 }
 
+.save {
+    color: black;
+}
+
+.save_keyword {
+    color: #16a34a;
+}
+
 .save_item:hover {
     decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
 }
@@ -50,6 +58,13 @@ input[type="text"] {
     position: relative;
 }
 
+.no_saves {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .panel {
     position: absolute;
