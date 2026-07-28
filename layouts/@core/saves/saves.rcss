@@ -49,6 +49,11 @@ input[type="text"] {
     decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
 }
 
+.save_item.selected {
+    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+    background-color: rgba(22, 163, 74, 0.2);
+}
+
 .save_list {
     flex: 1;
     display: flex;

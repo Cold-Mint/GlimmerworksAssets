@@ -9,13 +9,17 @@
         <h1 class="dark_text">saves_list</h1>
         <div class="search_bar">
             <img class="search_icon" src="texture://@core:gui/search_icon"/>
-            <input type="text" id="search_input" class="dark_text" data-value="search_keyword" data-event-change="on_search_change"/>
+            <input type="text" id="search_input" class="dark_text" data-value="search_keyword"
+                   data-event-change="on_search_change"/>
         </div>
 
-        <div class="save_list" data-if="save_items.size > 0">
-            <div class="save_item" data-for="save_item : save_items" data-event-click="on_save_click(save_item.index)"
+        <div class="save_list" id="save_list" data-if="save_items.size > 0">
+            <div class="save_item" data-for="save_item : save_items"
+                 data-event-click="on_save_select(save_item.index);on_save_click(save_item.index)"
                  data-class-selected="save_item.selected">
-                <h2 class="dark_text save_label"><span class="save">{{save_item.prefix}}</span><span class="save_keyword">{{save_item.keyword}}</span><span class="save">{{save_item.suffix}}</span></h2>
+                <h2 class="dark_text save_label"><span class="save">{{save_item.prefix}}</span><span
+                        class="save_keyword">{{save_item.keyword}}</span><span class="save">{{save_item.suffix}}</span>
+                </h2>
                 <h3 data-if="save_item.allow_cheats" class="cheat_mode">cheats_mode</h3>
                 <label class="dark_text save_label">{{save_item.last_played_time}}</label>
             </div>
