@@ -85,3 +85,40 @@ h2 {
 h3 {
     font-size: 14dp;
 }
+
+.item_slot {
+    position: relative;
+    width: 42dp;
+    height: 42dp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    decorator: ninepatch-texture("texture://@core:gui/item_slot", 8px, 8px, 8px, 8px);
+}
+
+
+.recipe_slot {
+    position: relative;
+    width: 42dp;
+    height: 42dp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    decorator: ninepatch-texture("texture://@core:gui/craft_preview_slot", 8px, 8px, 8px, 8px);
+}
+
+.item_slot[selected] {
+    decorator: ninepatch-texture("texture://@core:gui/item_slot_selected", 8px, 8px, 8px, 8px);
+}
+
+.item_slot_icon {
+    width: 32dp;
+    height: 32dp;
+}
+
+.item_slot_count {
+    position: absolute;
+    bottom: 4dp;
+    right: 4dp;
+    font-size: 14dp;
+}

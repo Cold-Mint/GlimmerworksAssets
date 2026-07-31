@@ -1,17 +1,15 @@
 <rml>
     <head>
         <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="hotbar.rcss"/>
     </head>
 
-    <body class="hotbar" data-model="hotbar">
+    <body class="page" data-model="hotbar">
     <div class="hotbar_container">
-        <div class="hotbar_slot" data-for="slot : item_slots">
-            <div class="item_slot" data-class-selected="slot.selected" data-class-empty="!slot.selected">
-                <div class="slot_content" data-if="slot.image != ''">
-                    <img class="item_icon" data-attr-src="slot.image"/>
-                    <span class="item_count">{{slot.amount}}</span>
-                </div>
-            </div>
+        <div class="item_slot" data-attrif-selected="slot.selected"
+             data-for="slot : item_slots">
+            <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
+            <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
         </div>
     </div>
     </body>
