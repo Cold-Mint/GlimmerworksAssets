@@ -1,0 +1,51 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="recipe_detail.rcss"/>
+    </head>
+    <body class="page">
+    <div class="panel" data-model="recipe_detail">
+        <div class="detail_header">
+            <button data-event-click="on_back_click">back</button>
+            <div class="output_info">
+                <img class="item_slot_icon" data-if="output_image != ''" data-attr-src="output_image"/>
+                <span class="output_name dark_text">{{output_name}}</span>
+                <span class="output_amount dark_text" data-if="output_amount > 1">x{{output_amount}}</span>
+            </div>
+        </div>
+        <div class="detail_body">
+            <div class="tag_progress_panel">
+                <div class="tag_progress_item"
+                     data-for="tag : tag_progress">
+                    <span class="tag_name dark_text">{{tag.tagName}}</span>
+                    <span class="tag_count dark_text" data-class-tag_satisfied="tag.satisfied">{{tag.currentWeight}} / {{tag.requiredWeight}}</span>
+                    <div class="progress_bar">
+                        <div class="progress_fill" data-class-progress_complete="tag.satisfied"/>
+                    </div>
+                </div>
+            </div>
+            <div class="item_choices_panel">
+                <div class="item_choice_card"
+                     data-for="choice : item_choices">
+                    <img class="item_slot_icon" data-if="choice.image != ''" data-attr-src="choice.image"/>
+                    <span class="item_name dark_text">{{choice.name}}</span>
+                    <span class="item_tags dark_text">{{choice.tagInfo}}</span>
+                    <div class="stepper">
+                        <button class="stepper_button" data-event-click="on_item_decrease(choice.inventoryIndex)">-
+                        </button>
+                        <span class="stepper_value dark_text">{{choice.investedAmount}}</span>
+                        <span class="backpack_count dark_text">/{{choice.backpackAmount}}</span>
+                        <button class="stepper_button" data-event-click="on_item_increase(choice.inventoryIndex)">+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail_footer">
+            <button class="detail_button" data-event-click="on_reset_click">reset</button>
+            <button data-attrif-disabled="!can_craft"
+                    data-event-click="on_craft_click">craft</button>
+        </div>
+    </div>
+    </body>
+</rml>

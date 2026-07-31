@@ -1,0 +1,147 @@
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 16dp;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 12dp;
+}
+
+.detail_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.output_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8dp;
+}
+
+.output_name {
+    font-size: 16dp;
+}
+
+.output_amount {
+    font-size: 14dp;
+}
+
+.detail_body {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 12dp;
+}
+
+.tag_progress_panel {
+    display: flex;
+    flex-direction: column;
+    width: 180dp;
+    gap: 12dp;
+}
+
+.tag_progress_item {
+    display: flex;
+    flex-direction: column;
+    gap: 4dp;
+}
+
+.tag_name {
+    font-size: 13dp;
+}
+
+.tag_count {
+    font-size: 14dp;
+}
+
+tag_count.tag_satisfied {
+    color: #51cf66;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 6dp;
+    background-color: #333333;
+}
+
+.progress_fill {
+    height: 100%;
+    width: 50%;
+    background-color: #ff6b6b;
+}
+
+progress_fill.progress_complete {
+    background-color: #51cf66;
+}
+
+.item_choices_panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 8dp;
+    overflow: auto;
+}
+
+.item_choice_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240dp;
+    padding: 8dp;
+    gap: 4dp;
+    decorator: ninepatch-texture("texture://@core:gui/item_slot", 8px, 8px, 8px, 8px);
+}
+
+.item_name {
+    font-size: 12dp;
+}
+
+.item_tags {
+    font-size: 10dp;
+}
+
+.stepper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4dp;
+}
+
+.stepper_button {
+    width: 24dp;
+    height: 24dp;
+    padding: 0dp;
+    margin: 0dp;
+    font-size: 16dp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepper_value {
+    width: 30dp;
+    text-align: center;
+    font-size: 14dp;
+}
+
+.backpack_count {
+    font-size: 12dp;
+}
+
+.detail_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 12dp;
+    width: 100%;
+}
