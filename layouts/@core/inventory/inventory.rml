@@ -17,7 +17,7 @@
              data-for="recipe : recipe_slots"
              data-event-click="on_recipe_click(recipe.index)">
             <img class="item_slot_icon" data-if="recipe.image != ''" data-attr-src="recipe.image"/>
-            <span class="item_slot_count dark_text" data-if="recipe.amount > 1">{{recipe.amount}}</span>
+            <span class="item_slot_count" data-if="recipe.amount > 1">{{recipe.amount}}</span>
         </div>
     </div>
 

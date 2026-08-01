@@ -10,7 +10,8 @@
             <div class="output_info">
                 <img class="item_slot_icon" data-if="output_image != ''" data-attr-src="output_image"/>
                 <span class="output_name dark_text">{{output_name}}</span>
-                <span class="output_amount dark_text" data-if="output_amount > 1">x{{output_amount}}</span>
+                <span class="output_amount dark_text"
+                      data-if="output_count > 1">x {{output_count}}</span>
             </div>
         </div>
         <div class="detail_body">
@@ -18,9 +19,11 @@
                 <div class="tag_progress_item"
                      data-for="tag : tag_progress">
                     <span class="tag_name dark_text">{{tag.tagName}}</span>
-                    <span class="tag_count dark_text" data-class-tag_satisfied="tag.satisfied">{{tag.currentWeight}} / {{tag.requiredWeight}}</span>
+                    <span class="tag_count dark_text">{{tag.currentWeight}} / {{tag.requiredWeight}}</span>
                     <div class="progress_bar">
-                        <div class="progress_fill" data-class-progress_complete="tag.satisfied"/>
+                        <div data-class-progress_fill="!tag.satisfied"
+                             data-class-tag_satisfied="tag.satisfied"
+                             data-style-width="tag.progressWidth"/>
                     </div>
                 </div>
             </div>
@@ -31,20 +34,23 @@
                     <span class="item_name dark_text">{{choice.name}}</span>
                     <span class="item_tags dark_text">{{choice.tagInfo}}</span>
                     <div class="stepper">
-                        <button class="stepper_button" data-event-click="on_item_decrease(choice.inventoryIndex)">-
-                        </button>
+                        <button class="stepper_button" data-event-click="on_item_decrease(choice.inventoryIndex)">-</button>
                         <span class="stepper_value dark_text">{{choice.investedAmount}}</span>
                         <span class="backpack_count dark_text">/{{choice.backpackAmount}}</span>
-                        <button class="stepper_button" data-event-click="on_item_increase(choice.inventoryIndex)">+
-                        </button>
+                        <button class="stepper_button" data-event-click="on_item_increase(choice.inventoryIndex)">+</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="detail_footer">
+            <div data-if="max_craft_count > 1" class="craft_count_stepper">
+                <button class="stepper_button" data-event-click="on_craft_count_decrease">-</button>
+                <span class="craft_count_value dark_text">{{craft_count}}/{{max_craft_count}}</span>
+                <button class="stepper_button" data-event-click="on_craft_count_increase">+</button>
+            </div>
+            <button class="detail_button" data-event-click="on_auto_fill_click">auto_fill</button>
             <button class="detail_button" data-event-click="on_reset_click">reset</button>
-            <button data-attrif-disabled="!can_craft"
-                    data-event-click="on_craft_click">craft</button>
+            <button data-attrif-disabled="!can_craft" data-event-click="on_craft_click">craft</button>
         </div>
     </div>
     </body>
