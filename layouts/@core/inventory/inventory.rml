@@ -3,16 +3,16 @@
         <link type="text/rcss" href="../global.rcss"/>
         <link type="text/rcss" href="inventory.rcss"/>
     </head>
-    <body class="page">
-    <div class="item_container" data-model="inventory">
+    <body class="page" data-model="inventory">
+    <div class="item_container">
         <div class="item_slot"
              data-for="slot : item_slots">
             <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
             <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
         </div>
     </div>
-    <h1>craft</h1>
-    <div class="recipe_container" data-model="inventory">
+    <h1 data-if="recipe_slots.size > 0">craft</h1>
+    <div class="recipe_container">
         <div class="recipe_slot"
              data-for="recipe : recipe_slots"
              data-event-click="on_recipe_click(recipe.index)">
