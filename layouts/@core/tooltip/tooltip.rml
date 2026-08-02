@@ -1,0 +1,12 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="tooltip.rcss"/>
+    </head>
+    <body class="page" data-model="tooltip"
+          data-style-left="tooltip_left"
+          data-style-top="tooltip_top">
+    <span class="dark_text">{{tooltip_name}}</span>
+    <span class="dark_text" data-if="tooltip_desc != ''">{{tooltip_desc}}</span>
+    </body>
+</rml>

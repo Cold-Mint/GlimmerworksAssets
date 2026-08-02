@@ -7,7 +7,9 @@
     <body class="page" data-model="hotbar">
     <div class="hotbar_container">
         <div class="item_slot" data-attrif-selected="slot.selected"
-             data-for="slot : item_slots">
+             data-for="slot : item_slots"
+             data-event-mouseover="on_item_hover(it_index)"
+             data-event-mouseout="on_item_out(it_index)">
             <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
             <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
         </div>

@@ -6,7 +6,9 @@
     <body class="page" data-model="inventory">
     <div class="item_container">
         <div class="item_slot"
-             data-for="slot : item_slots">
+             data-for="slot : item_slots"
+             data-event-mouseover="on_item_hover(it_index)"
+             data-event-mouseout="on_item_out(it_index)">
             <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
             <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
         </div>
@@ -15,7 +17,9 @@
     <div class="recipe_container">
         <div class="recipe_slot"
              data-for="recipe : recipe_slots"
-             data-event-click="on_recipe_click(recipe.index)">
+             data-event-click="on_recipe_click(recipe.index)"
+             data-event-mouseover="on_recipe_hover(recipe.index)"
+             data-event-mouseout="on_recipe_out()">
             <img class="item_slot_icon" data-if="recipe.image != ''" data-attr-src="recipe.image"/>
             <span class="item_slot_count" data-if="recipe.amount > 1">{{recipe.amount}}</span>
         </div>
