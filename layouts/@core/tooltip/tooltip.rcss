@@ -1,7 +1,20 @@
 .page {
     pointer-events: none;
     position: absolute;
+    display: inline-block;
     padding: 16dp;
     z-index: 1000;
     decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+}
+
+.page label {
+    display: block;
+}
+
+.tip_positive {
+    color: #2EB85B;
+}
+
+.tip_negative {
+    color: #BE2D2D;
 }
