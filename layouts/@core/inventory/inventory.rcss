@@ -26,3 +26,12 @@
     width: 442dp;
     gap: 8dp;
 }
+
+.item_slot.draggable {
+    cursor: move;
+    drag: clone;
+}
+
+.item_slot.draggable:drag {
+    opacity: 0.7;
+}
