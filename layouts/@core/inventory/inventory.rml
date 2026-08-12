@@ -7,7 +7,7 @@
     <div class="item_container" id="item_container">
         <div class="item_slot draggable"
              data-for="slot : item_slots"
-             data-slot-index="{{it_index}}"
+             data-attr-data-slot-index="it_index"
              data-event-mouseover="on_item_hover(it_index)"
              data-event-mouseout="on_item_out(it_index)">
             <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
