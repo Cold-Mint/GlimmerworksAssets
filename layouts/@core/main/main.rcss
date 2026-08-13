@@ -36,6 +36,12 @@
     bottom: 16dp;
 }
 
+.game_version {
+    position: absolute;
+    right: 8dp;
+    top: 16dp;
+}
+
 .main_menu_background {
     position: absolute;
     width: 100%;

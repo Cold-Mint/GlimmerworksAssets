@@ -12,6 +12,7 @@
         <button id="exit_game" data-event-click="on_exit_game_click">exit_game</button>
     </div>
     <label class="copyright">{{copyright}}</label>
+    <label class="game_version">{{game_version}}</label>
     <div class="links">
         <a data-for="link : footer_links" href="{{link.url}}"
            data-event-click="on_link_click(link.url)">{{link.text}}</a>
