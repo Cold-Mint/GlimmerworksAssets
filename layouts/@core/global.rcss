@@ -88,6 +88,7 @@ h3 {
 
 .item_slot {
     position: relative;
+    z-index: 0;
     width: 42dp;
     height: 42dp;
     display: flex;
@@ -121,4 +122,33 @@ h3 {
     bottom: 4dp;
     right: 4dp;
     font-size: 14dp;
+}
+
+.durability_bar {
+    position: absolute;
+    z-index: -1;
+    top: 5dp;
+    left: 5dp;
+    right: 5dp;
+    bottom: 5dp;
+}
+
+.durability_fill {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.durability_fill.durability-high {
+    background-color: #22c55e;
+}
+
+.durability_fill.durability-mid {
+    background-color: #eab308;
+}
+
+.durability_fill.durability-low {
+    background-color: #ef4444;
 }
