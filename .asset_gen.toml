@@ -62,6 +62,16 @@ to_path = ".templates/colors/ore/copper_light.color.toml"
 from_path = ".templates/colors/placeholder_red.color.toml"
 to_path = ".templates/colors/ore/copper_shadow.color.toml"
 
+[[texture_variation]]
+template_path = ".templates/textures/ore.png"
+output_path = "textures/glimmerworks/tiles/ore_coal.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/coal.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/coal.color.toml"
+
 # 石镐
 [[texture_variation]]
 template_path = ".templates/textures/pickaxe.png"
@@ -259,6 +269,13 @@ output_path = "textures/glimmerworks/materials/raw_copper.png"
 [[texture_variation.color_mapping]]
 from_path = ".templates/colors/placeholder_green.color.toml"
 to_path = ".templates/colors/ore/copper_light.color.toml"
+
+[[texture_variation]]
+template_path = ".templates/textures/raw.png"
+output_path = "textures/glimmerworks/materials/coal.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/coal.color.toml"
 
 
 [[texture_variation]]
