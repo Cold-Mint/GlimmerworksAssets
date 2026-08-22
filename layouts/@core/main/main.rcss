@@ -8,7 +8,7 @@
 }
 
 .logo {
-    width: 200dp;
+    width: 384dp;
     height: 96dp;
     margin-top: 10%;
     decorator: image("texture://@core:gui/logo");
