@@ -10,7 +10,7 @@
              data-attr-data-slot-index="it_index"
              data-event-mouseover="on_item_hover(it_index)"
              data-event-mouseout="on_item_out(it_index)">
-            <div class="durability_bar" data-if="slot.durability >= 0">
+            <div class="durability_bar" data-if="slot.durability != 0 && slot.durability != 100">
                 <div class="durability_fill"
                      data-style-height="slot.durability + '%'"
                      data-class-durability-high="slot.durability > 70"
