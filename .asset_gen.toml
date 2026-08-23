@@ -94,6 +94,61 @@ to_path = ".templates/colors/ore/wood_shadow.color.toml"
 from_path = ".templates/colors/placeholder_green.color.toml"
 to_path = ".templates/colors/ore/wood_light.color.toml"
 
+# 金锤
+[[texture_variation]]
+template_path = ".templates/textures/hammer.png"
+output_path = "textures/glimmerworks/items/hammer_golden.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/gold_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/gold_light.color.toml"
+
+# 铁锤
+[[texture_variation]]
+template_path = ".templates/textures/hammer.png"
+output_path = "textures/glimmerworks/items/hammer_iron.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/iron_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/iron_light.color.toml"
+
+# 铜锤
+[[texture_variation]]
+template_path = ".templates/textures/hammer.png"
+output_path = "textures/glimmerworks/items/hammer_copper.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/copper_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/copper_light.color.toml"
+
+# 石锤
+[[texture_variation]]
+template_path = ".templates/textures/hammer.png"
+output_path = "textures/glimmerworks/items/hammer_stone.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/stone_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/stone_light.color.toml"
+
+# 木锤
+[[texture_variation]]
+template_path = ".templates/textures/hammer.png"
+output_path = "textures/glimmerworks/items/hammer_wooden.png"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_red.color.toml"
+to_path = ".templates/colors/ore/wood_shadow.color.toml"
+[[texture_variation.color_mapping]]
+from_path = ".templates/colors/placeholder_green.color.toml"
+to_path = ".templates/colors/ore/wood_light.color.toml"
+
 # 黑色玻璃
 [[texture_variation]]
 template_path = ".templates/textures/glass.png"
