@@ -1,0 +1,14 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="ui_message.rcss"/>
+    </head>
+
+    <body class="ui_message_body" data-model="ui_message">
+        <div class="ui_message_list">
+            <div class="ui_message_item" data-for="m : ui_messages">
+                <span class="ui_message_text">{{m.message}}</span>
+            </div>
+        </div>
+    </body>
+</rml>
