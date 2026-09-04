@@ -1,0 +1,20 @@
+#SDL_GPU_FILTER_NEAREST
+min_filter = 0
+#SDL_GPU_FILTER_NEAREST
+mag_filter = 0
+#SDL_GPU_SAMPLERMIPMAPMODE_LINEAR
+mipmap_mode = 1
+#SDL_GPU_SAMPLERADDRESSMODE_CLAMP_TO_EDGE
+address_mode_u = 2
+#SDL_GPU_SAMPLERADDRESSMODE_CLAMP_TO_EDGE
+address_mode_v = 2
+#SDL_GPU_SAMPLERADDRESSMODE_CLAMP_TO_EDGE
+address_mode_w = 2
+mip_lod_bias = 0.0
+max_anisotropy = 1.0
+#SDL_GPU_COMPAREOP_ALWAYS
+compare_op = 8
+min_lod = 0.0
+max_lod = 100.0
+enable_anisotropy = false
+enable_compare = false

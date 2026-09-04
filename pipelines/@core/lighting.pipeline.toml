@@ -1,0 +1,13 @@
+#Additive blending
+#加法混合
+blend_mode = 2
+[vertex_shader]
+pack_id = "@core"
+resource_key = "lighting"
+resource_type = 23
+
+[fragment_shader]
+pack_id = "@core"
+resource_key = "lighting"
+resource_type = 24
+
