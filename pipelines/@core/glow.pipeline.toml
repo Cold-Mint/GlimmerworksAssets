@@ -1,0 +1,17 @@
+#Standard alpha blending.
+#标准 alpha 混合。
+blend_mode = 1
+[vertex_shader]
+pack_id = "@core"
+resource_key = "glow"
+resource_type = 23
+
+[fragment_shader]
+pack_id = "@core"
+resource_key = "glow"
+resource_type = 24
+
+[uniform_block]
+pack_id = "@core"
+resource_key = "glow"
+resource_type = 27
