@@ -11,3 +11,8 @@ pack_id = "@core"
 resource_key = "lighting"
 resource_type = 24
 
+[uniform_block]
+pack_id = "@core"
+resource_key = "lighting"
+resource_type = 27
+

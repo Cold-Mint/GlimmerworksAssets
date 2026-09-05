@@ -1,0 +1,46 @@
+# Lightmap origin in tile coordinates (x, y).
+# 光照贴图原点（瓦片坐标，x, y）。
+set = 3
+binding = 0
+
+[[members]]
+name = "u_lightmap_origin"
+type = "vec2"
+source = "@builtin.lightmap_origin"
+
+[[members]]
+name = "u_lightmap_size"
+type = "vec2"
+source = "@builtin.lightmap_size"
+
+[[members]]
+name = "u_camera_position"
+type = "vec2"
+source = "@builtin.camera_position"
+
+[[members]]
+name = "u_camera_size"
+type = "vec2"
+source = "@builtin.camera_size"
+
+[[members]]
+name = "u_zoom"
+type = "float"
+source = "@builtin.zoom"
+
+[[members]]
+name = "u_tile_size"
+type = "float"
+source = "@builtin.tile_size"
+
+[[members]]
+name = "u_min_visibility"
+type = "float"
+source = "static"
+value = [0.05]
+
+[[members]]
+name = "u_tint_strength"
+type = "float"
+source = "static"
+value = [0.6]
