@@ -1,6 +1,6 @@
-#Additive blending
-#加法混合
-blend_mode = 2
+#No blending, destination is overwritten.
+#不混合，直接覆盖。
+blend_mode = 0
 [vertex_shader]
 pack_id = "@core"
 resource_key = "lighting"
