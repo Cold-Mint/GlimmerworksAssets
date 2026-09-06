@@ -1,9 +1,0 @@
-# Grayscale post-processing driven by the time of day.
-# 由时间驱动的灰度后处理。
-set = 3
-binding = 0
-
-[[members]]
-name = "u_time_of_day"
-type = "float"
-source = "@builtin.time_of_day"
