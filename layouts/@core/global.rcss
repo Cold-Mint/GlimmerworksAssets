@@ -22,23 +22,47 @@ button {
     padding-top: 16dp;
     padding-bottom: 16dp;
     cursor: pointer;
-    decorator: ninepatch-texture("texture://@core:gui/button", 4px, 4px, 4px, 4px);
+    decorator: ninepatch-texture("texture://@core:gui/button", 28px, 28px, 28px, 28px);
 }
 
 button:hover {
-    decorator: ninepatch-texture("texture://@core:gui/button_hovered", 4px, 4px, 4px, 4px);
+    decorator: ninepatch-texture("texture://@core:gui/button_hovered", 28px, 28px, 28px, 28px);
 }
 
 button:active {
-    decorator: ninepatch-texture("texture://@core:gui/button_pressed", 4px, 4px, 4px, 4px);
+    decorator: ninepatch-texture("texture://@core:gui/button_pressed", 28px, 28px, 28px, 28px);
 }
 
 button[disabled] {
     cursor: default;
-    opacity: 0.6;
-    color: #888888;
-    decorator: ninepatch-texture("texture://@core:gui/button_disabled", 8px, 8px, 8px, 8px);
+    color: #949694;
+    decorator: ninepatch-texture("texture://@core:gui/button_disabled", 28px, 28px, 28px, 28px);
 }
+
+select {
+    width: 300dp;
+    padding-left: 8dp;
+    padding-right: 8dp;
+    padding-top: 16dp;
+    padding-bottom: 16dp;
+    cursor: pointer;
+    decorator: ninepatch-texture("texture://@core:gui/input_text", 28px, 28px, 28px, 28px);
+}
+
+option {
+    width: 300dp;
+    padding-left: 8dp;
+    padding-right: 8dp;
+    padding-top: 16dp;
+    padding-bottom: 16dp;
+    cursor: pointer;
+    decorator: ninepatch-texture("texture://@core:gui/option", 28px, 28px, 28px, 28px);
+}
+
+option:hover {
+    decorator: ninepatch-texture("texture://@core:gui/option_hovered", 28px, 28px, 28px, 28px);
+}
+
 
 .panel {
     padding: 24dp;
@@ -61,6 +85,11 @@ input[type="text"] {
     padding-bottom: 16dp;
     cursor: text;
     decorator: ninepatch-texture("texture://@core:gui/input_text", 8px, 8px, 8px, 8px);
+}
+
+input[type="text"]:focus {
+    cursor: text;
+    decorator: ninepatch-texture("texture://@core:gui/input_text_focus", 8px, 8px, 8px, 8px);
 }
 
 input[type="checkbox"] {

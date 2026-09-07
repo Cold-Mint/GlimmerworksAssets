@@ -25,9 +25,13 @@
     margin-left: 8dp;
 }
 
+.dimension_select {
+    margin-left: 16dp;
+}
+
 .panel_item_button {
     margin-left: 8dp;
-    width: 64dp;
+    width: 128dp;
 }
 
 .panel_item_action_button_left {

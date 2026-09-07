@@ -21,6 +21,15 @@
         </div>
 
         <div class="panel_item">
+            <label class="dark_text">initial_dimension</label>
+            <select class="dimension_select dark_text" data-value="selected_dimension_id">
+                <option data-attr-value="dimension.dimension_id" class="dark_text" data-for="dimension : dimensions">
+                    {{dimension.name}}
+                </option>
+            </select>
+        </div>
+
+        <div class="panel_item">
             <input type="checkbox" data-checked="allow_cheats"/>
             <label class="dark_text panel_item_checkbox_label">allow_cheats</label>
         </div>
