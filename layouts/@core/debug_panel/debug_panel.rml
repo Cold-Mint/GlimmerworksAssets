@@ -1,0 +1,15 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="debug_panel.rcss"/>
+    </head>
+
+    <body class="debug_panel_body" data-model="debug_panel">
+        <div class="debug_crosshair_h" data-style-top="crosshair_y + 'px'"></div>
+        <div class="debug_crosshair_v" data-style-left="crosshair_x + 'px'"></div>
+        <div class="debug_text_list">
+            <span class="debug_text_line" data-for="line : debug_lines">{{line.text}}</span>
+        </div>
+        <span class="debug_chunk_info">{{chunk_text}}</span>
+    </body>
+</rml>
