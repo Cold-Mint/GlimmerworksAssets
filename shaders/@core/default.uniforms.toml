@@ -1,0 +1,10 @@
+# Uniform block name, must match the block name in the shader.
+# Uniform 块名，需与着色器内 block 名一致。
+name = "ProjectionUniform"
+
+# Logical view size in pixels (x, y).
+# 逻辑视口尺寸（像素，x, y）。
+[[members]]
+name = "u_viewSize"
+type = "vec2"
+source = "@builtin.resolution"

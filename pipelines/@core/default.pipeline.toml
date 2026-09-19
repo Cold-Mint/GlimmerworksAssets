@@ -10,3 +10,8 @@ resource_type = 23
 pack_id = "@core"
 resource_key = "default"
 resource_type = 24
+
+[[vertex_uniform_block]]
+pack_id = "@core"
+resource_key = "default"
+resource_type = 27

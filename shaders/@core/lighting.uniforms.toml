@@ -1,8 +1,9 @@
+# Uniform block name, must match the block name in the shader.
+# Uniform 块名，需与着色器内 block 名一致。
+name = "LightingParams"
+
 # Lightmap origin in tile coordinates (x, y).
 # 光照贴图原点（瓦片坐标，x, y）。
-set = 3
-binding = 0
-
 [[members]]
 name = "u_lightmap_origin"
 type = "vec2"
