@@ -1,10 +1,8 @@
 #version 450
 layout(location = 0) in vec2 in_uv;
 layout(location = 0) out vec4 out_color;
-#set 2: Sampled textures（采样纹理）来自SDL_gpu.h
 layout(set = 2, binding = 0) uniform sampler2D sceneTexture;
 layout(set = 2, binding = 1) uniform sampler2D lightMap;
-#set 3: Uniform buffers（uniform 缓冲）来自SDL_gpu.h
 layout(set = 3, binding = 0) uniform LightingParams {
     vec2 u_lightmap_origin;
     vec2 u_lightmap_size;
