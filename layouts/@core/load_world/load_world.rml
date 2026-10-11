@@ -1,0 +1,10 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="load_world.rcss"/>
+    </head>
+
+    <body class="page" data-model="load_world">
+    <h1>{{status_text}}</h1>
+    </body>
+</rml>
