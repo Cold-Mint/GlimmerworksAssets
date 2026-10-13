@@ -4,14 +4,14 @@ blend_mode = 1
 [vertex_shader]
 pack_id = "@core"
 resource_key = "default"
-resource_type = 23
+resource_type = "shader_vertex"
 
 [fragment_shader]
 pack_id = "@core"
 resource_key = "default"
-resource_type = 24
+resource_type = "shader_fragment"
 
 [[vertex_uniform_block]]
 pack_id = "@core"
 resource_key = "default"
-resource_type = 27
+resource_type = "uniform_block"

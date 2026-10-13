@@ -4,15 +4,15 @@ blend_mode = 0
 [vertex_shader]
 pack_id = "@core"
 resource_key = "lighting"
-resource_type = 23
+resource_type = "shader_vertex"
 
 [fragment_shader]
 pack_id = "@core"
 resource_key = "lighting"
-resource_type = 24
+resource_type = "shader_fragment"
 
 [[fragment_uniform_block]]
 pack_id = "@core"
 resource_key = "lighting"
-resource_type = 27
+resource_type = "uniform_block"
 
