@@ -1,0 +1,68 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="storage.rcss"/>
+    </head>
+    <body class="page" data-model="storage">
+    <div class="storage_panel">
+        <div class="storage_header">
+            <span class="storage_title dark_text">chest</span>
+            <button class="storage_back" data-event-click="on_back_click">back</button>
+        </div>
+        <div class="storage_toolbar">
+            <button class="storage_tool_button" data-event-click="on_deposit_all_click">deposit_all</button>
+            <button class="storage_tool_button" data-event-click="on_quick_stack_click">quick_stack</button>
+            <button class="storage_tool_button" data-event-click="on_loot_all_click">loot_all</button>
+            <button class="storage_tool_button" data-event-click="on_restock_click">restock</button>
+            <input id="search_input" type="text" class="storage_search dark_text"
+                   data-event-change="on_filter_change"/>
+        </div>
+        <div class="storage_body">
+            <div class="storage_column">
+                <div class="storage_column_header">
+                    <span class="storage_label dark_text">inventory</span>
+                    <button class="storage_sort" data-event-click="on_sort_player_click">sort</button>
+                </div>
+                <div class="item_container" id="player_container">
+                    <div class="item_slot draggable"
+                         data-for="slot : player_slots"
+                         data-attr-data-slot-index="slot.index">
+                        <div class="durability_bar" data-if="slot.durability != 0 &amp;&amp; slot.durability != 100">
+                            <div class="durability_fill"
+                                 data-style-height="slot.durability + '%'"
+                                 data-class-durability-high="slot.durability > 70"
+                                 data-class-durability-mid="slot.durability >= 25 &amp;&amp; slot.durability <= 70"
+                                 data-class-durability-low="slot.durability < 25">
+                            </div>
+                        </div>
+                        <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
+                        <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="storage_column">
+                <div class="storage_column_header">
+                    <span class="storage_label dark_text">chest</span>
+                    <button class="storage_sort" data-event-click="on_sort_chest_click">sort</button>
+                </div>
+                <div class="item_container" id="chest_container">
+                    <div class="item_slot draggable"
+                         data-for="slot : chest_slots"
+                         data-attr-data-slot-index="slot.index">
+                        <div class="durability_bar" data-if="slot.durability != 0 &amp;&amp; slot.durability != 100">
+                            <div class="durability_fill"
+                                 data-style-height="slot.durability + '%'"
+                                 data-class-durability-high="slot.durability > 70"
+                                 data-class-durability-mid="slot.durability >= 25 &amp;&amp; slot.durability <= 70"
+                                 data-class-durability-low="slot.durability < 25">
+                            </div>
+                        </div>
+                        <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
+                        <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</rml>

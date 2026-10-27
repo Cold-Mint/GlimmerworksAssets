@@ -1,0 +1,90 @@
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storage_panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12dp;
+    padding: 16dp;
+    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+}
+
+.storage_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.storage_title {
+    font-size: 18dp;
+}
+
+.storage_toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8dp;
+}
+
+.storage_tool_button {
+    min-width: 88dp;
+    height: 30dp;
+}
+
+.storage_search {
+    flex: 1;
+    height: 30dp;
+    margin-left: 8dp;
+}
+
+.storage_body {
+    display: flex;
+    flex-direction: row;
+    gap: 16dp;
+}
+
+.storage_column {
+    display: flex;
+    flex-direction: column;
+    gap: 8dp;
+}
+
+.storage_column_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.storage_label {
+    font-size: 14dp;
+}
+
+.storage_sort {
+    height: 26dp;
+}
+
+.item_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 442dp;
+    gap: 8dp;
+}
+
+.item_slot.draggable {
+    cursor: move;
+    drag: clone;
+}
+
+.item_slot.draggable:drag {
+    opacity: 0.7;
+}
