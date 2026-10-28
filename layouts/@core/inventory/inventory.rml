@@ -6,8 +6,6 @@
     <body class="page" data-model="inventory">
     <div class="inventory_toolbar">
         <button class="inventory_sort" data-event-click="on_sort_click">sort</button>
-        <input id="search_input" type="text" class="inventory_search dark_text"
-               data-event-change="on_filter_change"/>
     </div>
     <div class="item_container" id="item_container">
         <div class="item_slot draggable"
