@@ -43,3 +43,22 @@
     margin-left: 4dp;
     flex-grow: 1;
 }
+
+/* 创建世界：建议（强调）按钮 */
+.panel_item_action_button_right {
+    color: var(--accent-fg);
+    border-color: var(--accent-hover);
+    decorator: vertical-gradient(var(--accent-btn-top) var(--accent-btn-bottom));
+}
+
+.panel_item_action_button_right:hover {
+    color: var(--accent-fg);
+    border-color: var(--accent-active);
+    decorator: vertical-gradient(var(--accent-btn-hover-top) var(--accent-btn-hover-bottom));
+}
+
+.panel_item_action_button_right:active {
+    color: var(--accent-fg);
+    border-color: var(--accent-active);
+    decorator: vertical-gradient(var(--accent-btn-active-top) var(--accent-btn-active-bottom));
+}

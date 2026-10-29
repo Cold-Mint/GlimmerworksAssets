@@ -1,0 +1,15 @@
+<template name="item_slot_content">
+<head></head>
+<body>
+    <div class="durability_bar" data-if="slot.durability != 0 &amp;&amp; slot.durability != 100">
+        <div class="durability_fill"
+             data-style-height="slot.durability + '%'"
+             data-class-durability-high="slot.durability > 70"
+             data-class-durability-mid="slot.durability >= 25 &amp;&amp; slot.durability <= 70"
+             data-class-durability-low="slot.durability < 25">
+        </div>
+    </div>
+    <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
+    <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
+</body>
+</template>

@@ -11,7 +11,9 @@
     flex-direction: column;
     gap: 12dp;
     padding: 16dp;
-    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+    background-color: var(--surface);
+    border: 1dp var(--border);
+    border-radius: 12dp;
 }
 
 .storage_header {
@@ -72,6 +74,8 @@
 
 .item_slot.draggable:drag {
     decorator: none;
+    background-color: transparent;
+    border: 0dp;
 }
 
 .item_slot.draggable:drag .item_slot_count,

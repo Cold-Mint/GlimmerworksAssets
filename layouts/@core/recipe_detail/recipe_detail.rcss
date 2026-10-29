@@ -65,19 +65,22 @@
 
 .tag_satisfied {
     height: 6dp;
-    background-color: green;
+    background-color: var(--success);
+    border-radius: 3dp;
 }
 
 .progress_fill {
     height: 6dp;
-    background-color: orange;
+    background-color: var(--warning-alt);
+    border-radius: 3dp;
 }
 
 .progress_bar {
     width: 100%;
     height: 6dp;
     display: flex;
-    background-color: gray;
+    background-color: var(--border-light);
+    border-radius: 3dp;
 }
 
 .item_choices_panel {
@@ -96,7 +99,9 @@
     width: 240dp;
     padding: 8dp;
     gap: 4dp;
-    decorator: ninepatch-texture("texture://@core:gui/item_slot", 8px, 8px, 8px, 8px);
+    background-color: var(--surface-alt);
+    border: 1dp var(--border-light);
+    border-radius: 8dp;
 }
 
 .item_name {
@@ -152,4 +157,29 @@
     width: 50dp;
     text-align: center;
     font-size: 14dp;
+}
+
+/* 合成：建议（强调）按钮 */
+.detail_footer button:last-child {
+    color: var(--accent-fg);
+    border-color: var(--accent-hover);
+    decorator: vertical-gradient(var(--accent-btn-top) var(--accent-btn-bottom));
+}
+
+.detail_footer button:last-child:hover {
+    color: var(--accent-fg);
+    border-color: var(--accent-active);
+    decorator: vertical-gradient(var(--accent-btn-hover-top) var(--accent-btn-hover-bottom));
+}
+
+.detail_footer button:last-child:active {
+    color: var(--accent-fg);
+    border-color: var(--accent-active);
+    decorator: vertical-gradient(var(--accent-btn-active-top) var(--accent-btn-active-bottom));
+}
+
+.detail_footer button:last-child[disabled] {
+    color: var(--accent-fg);
+    border-color: var(--accent-btn-disabled-border);
+    decorator: vertical-gradient(var(--accent-btn-disabled-top) var(--accent-btn-disabled-bottom));
 }

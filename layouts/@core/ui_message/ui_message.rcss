@@ -22,9 +22,10 @@
 .ui_message_text {
     display: inline-block;
     padding: 4dp 12dp;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--toast-bg);
     color: #ffffff;
-    border-radius: 4dp;
+    border: 1dp var(--toast-border);
+    border-radius: 8dp;
     font-size: 14dp;
 }
 

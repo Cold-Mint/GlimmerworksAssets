@@ -11,13 +11,12 @@ input[type="text"] {
     width: 100%;
 }
 
-
 .search_bar {
     position: relative;
 }
 
 .cheat_mode {
-    color: red;
+    color: var(--danger);
 }
 
 .search_icon {
@@ -35,6 +34,8 @@ input[type="text"] {
     justify-content: center;
     gap: 8dp;
     padding: 16dp;
+    border: 1dp transparent;
+    border-radius: 8dp;
 }
 
 .save_list scrollbarvertical {
@@ -42,11 +43,12 @@ input[type="text"] {
 }
 
 .save_keyword {
-    color: #16a34a;
+    color: var(--success-text);
 }
 
 .save_item.selected {
-    decorator: ninepatch-texture("texture://@core:gui/panel_bg", 8px, 8px, 8px, 8px);
+    background-color: var(--slot-selected-bg);
+    border-color: var(--accent);
 }
 
 .save_list {
@@ -89,4 +91,33 @@ input[type="text"] {
 button {
     margin: 0dp;
     flex: 1;
+}
+
+/* 删除存档：破坏性按钮 */
+.delete_button {
+    color: var(--accent-fg);
+    border-color: var(--danger-btn-border);
+    decorator: vertical-gradient(var(--danger-btn-top) var(--danger-btn-bottom));
+}
+
+.delete_button:hover {
+    color: var(--accent-fg);
+    border-color: var(--danger-btn-active-bottom);
+    decorator: vertical-gradient(var(--danger-btn-hover-top) var(--danger-btn-hover-bottom));
+}
+
+.delete_button:active {
+    color: var(--accent-fg);
+    border-color: var(--danger-btn-active-bottom);
+    decorator: vertical-gradient(var(--danger-btn-active-top) var(--danger-btn-active-bottom));
+}
+
+/* 禁用态：覆盖悬停/按下，保持灰色禁用样式 */
+.delete_button[disabled],
+.delete_button[disabled]:hover,
+.delete_button[disabled]:active {
+    cursor: default;
+    color: var(--fg-muted);
+    border-color: var(--border-light);
+    decorator: vertical-gradient(var(--btn-disabled-top) var(--btn-disabled-bottom));
 }

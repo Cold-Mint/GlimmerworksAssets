@@ -10,7 +10,7 @@
     top: 0;
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 230, 0, 0.78);
+    background-color: #ffe600c7;
 }
 
 .debug_crosshair_v {
@@ -19,7 +19,7 @@
     left: 0;
     width: 1px;
     height: 100%;
-    background-color: rgba(255, 230, 0, 0.78);
+    background-color: #ffe600c7;
 }
 
 .debug_text_list {
@@ -34,10 +34,10 @@
     display: block;
     margin-bottom: 2dp;
     padding: 2dp 8dp;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #1414169e;
     color: #ffffff;
     font-size: 12dp;
-    border-radius: 2dp;
+    border-radius: 4dp;
 }
 
 .debug_chunk_info {
@@ -45,7 +45,7 @@
     bottom: 8dp;
     left: 8dp;
     padding: 4dp 12dp;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #1414169e;
     color: #ffffff;
     font-size: 12dp;
     border-radius: 4dp;

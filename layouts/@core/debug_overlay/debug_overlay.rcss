@@ -18,7 +18,7 @@
     bottom: 8dp;
     right: 8dp;
     padding: 4dp 12dp;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #1414169e;
     border-radius: 4dp;
 }
 

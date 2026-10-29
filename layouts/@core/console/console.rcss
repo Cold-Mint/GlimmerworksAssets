@@ -1,10 +1,12 @@
+/* 控制台：跟随亮/暗主题的终端。 */
 .console {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 8dp;
-    decorator: image("texture://@core:console_gui/console_background");
+    background-color: var(--console-bg);
+    color: var(--console-fg);
     gap: 16dp;
 }
 
@@ -14,12 +16,15 @@ input[type="text"] {
     padding-right: 8dp;
     padding-top: 16dp;
     padding-bottom: 16dp;
-    color: white;
+    color: var(--console-fg);
     z-index: 2;
     font-size: 14dp;
-    decorator: ninepatch-texture("texture://@core:console_gui/input_text", 12px, 12px, 12px, 12px);
+    caret-color: var(--accent);
+    background-color: transparent;
+    border-width: 0dp;
+    border-color: transparent;
+    border-radius: 0dp;
 }
-
 
 .top_content {
     display: flex;
@@ -28,7 +33,9 @@ input[type="text"] {
     overflow-x: hidden;
     flex-direction: column;
     padding: 8dp;
-    decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
+    background-color: var(--console-panel-bg);
+    border: 1dp var(--console-border);
+    border-radius: 8dp;
 }
 
 .top_content_label {
@@ -36,15 +43,15 @@ input[type="text"] {
     padding-top: 4dp;
     padding-bottom: 4dp;
     border-bottom-width: 1dp;
-    border-bottom-color: white;
+    border-bottom-color: var(--console-divider);
 }
 
 .command_structure_item {
-    color: #00ffff;
+    color: var(--console-structure);
 }
 
 .command_structure_item_selected {
-    color: #00ff00;
+    color: var(--console-structure-selected);
 }
 
 .bottom_bar {
@@ -70,21 +77,22 @@ input[type="text"] {
     margin-top: 16dp;
     padding: 8dp;
     font-size: 14dp;
-    decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
+    background-color: var(--console-inset-bg);
+    border: 1dp var(--console-border);
+    border-radius: 8dp;
 }
 
 .suggestion_keyword {
     font-size: 14dp;
-    color: #00ff00;
+    color: var(--console-keyword);
     padding: 0dp;
 }
 
 .suggestion {
     font-size: 14dp;
-    color: #00ffff;
+    color: var(--console-suggestion);
     padding: 0dp;
 }
-
 
 .suggestion_list {
     display: flex;
@@ -94,7 +102,9 @@ input[type="text"] {
     max-height: 25vh;
     overflow-y: auto;
     overflow-x: hidden;
-    decorator: ninepatch-texture("texture://@core:console_gui/panel", 12px, 12px, 12px, 12px);
+    background-color: var(--console-inset-bg);
+    border: 1dp var(--console-border);
+    border-radius: 8dp;
 }
 
 .suggestion_list scrollbarvertical {
@@ -107,10 +117,16 @@ input[type="text"] {
     gap: 0dp;
     padding: 4dp 10dp 4dp 6dp;
     cursor: pointer;
+    border-radius: 4dp;
 }
 
 .suggestion_item_selected {
-    background-color: #D3D3D3;
+    background-color: var(--accent);
+}
+
+.suggestion_item_selected .suggestion,
+.suggestion_item_selected .suggestion_keyword {
+    color: var(--accent-fg);
 }
 
 .autocomplete_tip {
@@ -118,7 +134,7 @@ input[type="text"] {
     inset: 0;
     top: 8dp;
     left: 12dp;
-    color: #555555;
+    color: var(--console-muted);
     font-size: 14dp;
     z-index: 1;
 }

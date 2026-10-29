@@ -42,6 +42,8 @@
 
 .item_slot.draggable:drag {
     decorator: none;
+    background-color: transparent;
+    border: 0dp;
 }
 
 .item_slot.draggable:drag .item_slot_count,
