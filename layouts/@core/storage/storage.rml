@@ -64,6 +64,30 @@
                     </div>
                 </div>
             </div>
+            <div class="storage_column" data-if="show_loot">
+                <div class="storage_column_header">
+                    <span class="storage_label dark_text">loot</span>
+                    <button data-event-click="on_loot_take_all_click">take_all</button>
+                </div>
+                <div class="item_container" id="loot_container">
+                    <div class="item_slot draggable"
+                         data-for="slot : loot_slots"
+                         data-attr-data-slot-index="slot.index"
+                         data-event-mouseover="on_loot_item_hover(slot.index)"
+                         data-event-mouseout="on_item_out()">
+                        <div class="durability_bar" data-if="slot.durability != 0 &amp;&amp; slot.durability != 100">
+                            <div class="durability_fill"
+                                 data-style-height="slot.durability + '%'"
+                                 data-class-durability-high="slot.durability > 70"
+                                 data-class-durability-mid="slot.durability >= 25 &amp;&amp; slot.durability <= 70"
+                                 data-class-durability-low="slot.durability < 25">
+                            </div>
+                        </div>
+                        <img class="item_slot_icon" data-if="slot.image != ''" data-attr-src="slot.image"/>
+                        <span class="item_slot_count dark_text" data-if="slot.amount > 1">{{slot.amount}}</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </body>
