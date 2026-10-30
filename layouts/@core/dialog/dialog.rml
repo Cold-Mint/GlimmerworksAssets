@@ -1,0 +1,21 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="dialog.rcss"/>
+    </head>
+
+    <body class="dialog_page" data-model="dialog">
+    <div class="dialog_scrim">
+        <div class="dialog_panel">
+            <h2 class="dialog_title" data-if="title != ''">{{title}}</h2>
+            <div class="dialog_message" data-if="message != ''">{{message}}</div>
+            <div class="dialog_button_row">
+                <button data-for="button : buttons"
+                        data-class-dialog_button_destructive="button.destructive"
+                        data-class-dialog_button_suggested="button.suggested"
+                        data-event-click="on_dialog_button_click(button.result)">{{button.label}}</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</rml>

@@ -38,10 +38,6 @@ input[type="text"] {
     border-radius: 8dp;
 }
 
-.save_list scrollbarvertical {
-    width: 1dp;
-}
-
 .save_keyword {
     color: var(--success-text);
 }

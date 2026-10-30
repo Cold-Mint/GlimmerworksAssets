@@ -6,8 +6,8 @@
     <body class="page" data-model="tooltip"
           data-style-left="tooltip_left"
           data-style-top="tooltip_top">
-    <label class="dark_text">{{tooltip_name}}</label>
-    <label class="dark_text" data-if="tooltip_desc != ''">{{tooltip_desc}}</label>
+    <label>{{tooltip_name}}</label>
+    <label data-if="tooltip_desc != ''">{{tooltip_desc}}</label>
     <label data-for="tip : ability_tips"
           data-class-tip_positive="tip.is_positive"
           data-class-tip_negative="!tip.is_positive">{{tip.tip_text}}</label>
