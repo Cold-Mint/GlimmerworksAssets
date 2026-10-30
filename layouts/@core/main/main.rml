@@ -9,6 +9,7 @@
     <div class="logo"></div>
     <div class="button_container">
         <button id="start_game" data-event-click="on_start_game_click">start_game</button>
+        <button id="settings" data-event-click="on_settings_click">settings</button>
         <button id="exit_game" data-event-click="on_exit_game_click">exit_game</button>
     </div>
     <label class="copyright">{{copyright}}</label>

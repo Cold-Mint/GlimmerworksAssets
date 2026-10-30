@@ -1,0 +1,51 @@
+<rml>
+    <head>
+        <link type="text/rcss" href="../global.rcss"/>
+        <link type="text/rcss" href="settings.rcss"/>
+    </head>
+
+    <body class="page" data-model="settings_scene">
+    <div class="settings_window">
+        <div class="settings_sidebar">
+            <div class="settings_sidebar_header dark_text">settings</div>
+            <div class="settings_sidebar_list">
+                <div class="settings_sidebar_item" data-for="section : sections"
+                     data-class-settings_sidebar_item_selected="it_index == selected_index"
+                     data-event-click="on_section_select(it_index)">{{section.title}}</div>
+            </div>
+            <div class="settings_sidebar_footer">
+                <label class="dark_text">show_advanced</label>
+                <input type="checkbox" data-checked="show_advanced"
+                       data-event-change="on_show_advanced_changed"/>
+            </div>
+        </div>
+        <div class="settings_content">
+            <h2 class="dark_text settings_content_header">{{selected_title}}</h2>
+            <div class="settings_scroll">
+                <div class="settings_item" data-for="item : selected_items">
+                    <label class="dark_text settings_label">{{item.label}}</label>
+                    <div class="settings_control">
+                        <input type="checkbox" data-if="item.is_bool"
+                               data-checked="item.value_bool"
+                               data-event-change="on_bool_changed(item.key)"/>
+                        <select data-if="item.is_enum" data-attr-value="item.value"
+                                data-event-change="on_value_changed(item.key)">
+                            <option data-for="opt : item.options" data-attr-value="opt">{{opt}}</option>
+                        </select>
+                        <input type="range" data-if="item.is_range"
+                               data-attr-min="item.min" data-attr-max="item.max" data-attr-step="item.step"
+                               data-attr-value="item.value"
+                               data-event-change="on_value_changed(item.key)"/>
+                        <input type="text" data-if="item.is_text" data-attr-value="item.value"
+                               data-event-change="on_value_changed(item.key)"/>
+                    </div>
+                </div>
+            </div>
+            <div class="settings_buttons">
+                <button class="settings_save_button" data-event-click="on_save_click">save</button>
+                <button data-event-click="on_back_click">back</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</rml>

@@ -283,6 +283,29 @@ scrollbarcorner {
     background-color: transparent;
 }
 
+/* 滑块输入（range） */
+input[type="range"] {
+    height: 16dp;
+}
+
+input[type="range"] slidertrack {
+    height: 6dp;
+    background-color: var(--scrollbar-track);
+    border-radius: 3dp;
+}
+
+input[type="range"] sliderbar {
+    width: 16dp;
+    height: 16dp;
+    background-color: var(--accent);
+    border-radius: 8dp;
+}
+
+input[type="range"] sliderbar:hover,
+input[type="range"] sliderbar:active {
+    background-color: var(--accent-hover);
+}
+
 .panel {
     padding: 24dp;
     width: 560dp;
