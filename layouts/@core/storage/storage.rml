@@ -7,7 +7,7 @@
     <body class="page" data-model="storage">
     <div class="storage_panel">
         <div class="storage_header">
-            <span class="storage_title dark_text">chest</span>
+            <span class="storage_title dark_text">{{container_name}}</span>
             <button class="storage_back" data-event-click="on_back_click">back</button>
         </div>
         <div class="storage_toolbar">
@@ -32,36 +32,39 @@
                     </div>
                 </div>
             </div>
-            <div class="storage_column">
-                <div class="storage_column_header">
-                    <span class="storage_label dark_text">chest</span>
-                    <button data-event-click="on_sort_chest_click">sort</button>
+            <div>
+                <div class="storage_column" data-if="show_loot">
+                    <div class="storage_column_header">
+                        <span class="storage_label dark_text">loot</span>
+                        <button data-event-click="on_loot_take_all_click">take_all</button>
+                    </div>
+                    <div class="item_container" id="loot_container">
+                        <div class="item_slot draggable"
+                             data-for="slot : loot_slots"
+                             data-attr-data-slot-index="slot.index"
+                             data-event-mouseover="on_loot_item_hover(slot.index)"
+                             data-event-mouseout="on_item_out()">
+                            <template src="item_slot_content"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="item_container" id="chest_container">
-                    <div class="item_slot draggable"
-                         data-for="slot : chest_slots"
-                         data-attr-data-slot-index="slot.index"
-                         data-event-mouseover="on_chest_item_hover(slot.index)"
-                         data-event-mouseout="on_item_out()">
-                        <template src="item_slot_content"/>
+                <div class="storage_column">
+                    <div class="storage_column_header">
+                        <span class="storage_label dark_text">{{container_name}}</span>
+                        <button data-event-click="on_sort_chest_click">sort</button>
+                    </div>
+                    <div class="item_container" id="chest_container">
+                        <div class="item_slot draggable"
+                             data-for="slot : chest_slots"
+                             data-attr-data-slot-index="slot.index"
+                             data-event-mouseover="on_chest_item_hover(slot.index)"
+                             data-event-mouseout="on_item_out()">
+                            <template src="item_slot_content"/>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="storage_column" data-if="show_loot">
-                <div class="storage_column_header">
-                    <span class="storage_label dark_text">loot</span>
-                    <button data-event-click="on_loot_take_all_click">take_all</button>
-                </div>
-                <div class="item_container" id="loot_container">
-                    <div class="item_slot draggable"
-                         data-for="slot : loot_slots"
-                         data-attr-data-slot-index="slot.index"
-                         data-event-mouseover="on_loot_item_hover(slot.index)"
-                         data-event-mouseout="on_item_out()">
-                        <template src="item_slot_content"/>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     </body>

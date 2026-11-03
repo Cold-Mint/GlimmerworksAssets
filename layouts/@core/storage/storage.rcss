@@ -8,6 +8,8 @@
 
 .storage_panel {
     display: flex;
+    max-width: 80%;
+    height: 60%;
     flex-direction: column;
     gap: 12dp;
     padding: 16dp;
@@ -35,6 +37,7 @@
 }
 
 .storage_body {
+    flex: 1;
     display: flex;
     flex-direction: row;
     gap: 16dp;
@@ -63,8 +66,10 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 442dp;
+    width: 100%;
     gap: 8dp;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .item_slot.draggable {
