@@ -9,11 +9,13 @@
 
 .inventory_toolbar {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8dp;
+    flex-direction: column;
 }
 
+.top_panel {
+    display: flex;
+    gap: 8dp;
+}
 
 .item_container {
     display: flex;

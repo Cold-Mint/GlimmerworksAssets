@@ -5,18 +5,21 @@
         <link type="text/template" href="../item_slot.rml"/>
     </head>
     <body class="page" data-model="inventory">
-    <div class="inventory_toolbar">
-        <button class="inventory_sort" data-event-click="on_sort_click">sort</button>
-    </div>
-    <div class="item_container" id="item_container">
-        <div class="item_slot draggable"
-             data-for="slot : item_slots"
-             data-attr-data-slot-index="slot.index"
-             data-event-mouseover="on_item_hover(slot.index)"
-             data-event-mouseout="on_item_out(slot.index)">
-            <template src="item_slot_content"/>
+    <div class="top_panel">
+        <div class="item_container" id="item_container">
+            <div class="item_slot draggable"
+                 data-for="slot : item_slots"
+                 data-attr-data-slot-index="slot.index"
+                 data-event-mouseover="on_item_hover(slot.index)"
+                 data-event-mouseout="on_item_out(slot.index)">
+                <template src="item_slot_content"/>
+            </div>
+        </div>
+        <div class="inventory_toolbar">
+            <button data-event-click="on_sort_click">sort</button>
         </div>
     </div>
+
     <h1 data-if="recipe_slots.size > 0">simple_craft</h1>
     <div class="recipe_container">
         <div class="recipe_slot"

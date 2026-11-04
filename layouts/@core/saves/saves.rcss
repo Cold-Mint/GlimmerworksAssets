@@ -43,7 +43,6 @@ input[type="text"] {
 }
 
 .save_item.selected {
-    background-color: var(--slot-selected-bg);
     border-color: var(--accent);
 }
 

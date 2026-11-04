@@ -82,8 +82,7 @@ body {
     --slot-border: #0000004d;
     --recipe-slot-bg: #3584e424;
     --recipe-slot-border: #3584e48c;
-    --slot-selected-bg: #3584e42e;
-
+    
     /* 浮层提示 / 通知 */
     --toast-bg: #212124d9;
     --toast-border: #ffffff1a;
@@ -394,7 +393,6 @@ h3 {
 }
 
 .item_slot[selected] {
-    background-color: var(--slot-selected-bg);
     border: 2dp var(--accent);
 }
 
