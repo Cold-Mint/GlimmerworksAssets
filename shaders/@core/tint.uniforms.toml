@@ -1,0 +1,10 @@
+# Uniform block name, must match the block name in the shader.
+# Uniform 块名，需与着色器内 block 名一致。
+name = "TintUniform"
+
+# Per-command tint color (r, g, b, a in 0..1).
+# 每命令染色颜色（r、g、b、a，范围 0..1）。
+[[members]]
+name = "u_tintColor"
+type = "vec4"
+source = "@builtin.tint_color"
